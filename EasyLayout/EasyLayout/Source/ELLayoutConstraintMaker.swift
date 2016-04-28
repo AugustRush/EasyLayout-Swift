@@ -19,26 +19,26 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         refereneView = view
     }
     
-    //MARK: ELLayoutAttributeProtocol 
-    var ELLeft : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Left)
+    //MARK: ELLayoutAttributeProtocol
+    var ELLeft : ELConstraintItem {
+        return constraintItem(NSLayoutAttribute.Left)
     }
     
-    var ELRight : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Right)
+    var ELRight : ELConstraintItem {
+        return constraintItem(NSLayoutAttribute.Right)
     }
     
-    var ELTop : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Top)
+    var ELTop : ELConstraintItem {
+        return constraintItem(NSLayoutAttribute.Top)
     }
     
-    var ELBottom : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Bottom)
+    var ELBottom : ELConstraintItem {
+        return constraintItem(NSLayoutAttribute.Bottom)
     }
     
-    private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
-        let model = ELLayoutConstraintModel()
-        return model
+    private func constraintItem(attribute : NSLayoutAttribute) -> ELConstraintItem {
+        let item = ELConstraintItem()
+        return item
     }
     
 }

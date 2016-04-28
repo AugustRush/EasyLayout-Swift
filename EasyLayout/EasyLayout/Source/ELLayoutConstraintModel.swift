@@ -13,29 +13,22 @@ import AppKit
 #endif
 
 class ELLayoutConstraintModel {
-    
-    //MARK: public methods
-    func equalTo(_ : ELConstraintItem) {
-        
-    }
-    
-    func greaterThanOrEqualTo(_ : ELConstraintItem) {
-        
-    }
-    
-    func lessThanOrEqualTo(_ : ELConstraintItem) {
-        
-    }
-
-    //MARK: internal
-    private var item1 = ELConstraintItem()
-    private var item2 = ELConstraintItem()
-}
-
-struct ELConstraintItem {
     weak var view : View!
-    var mutiplier : Float = 1.0
+    weak var toView : View!
+    var mutiplier : CGFloat = 1.0
     var relation : NSLayoutRelation = .Equal
     var attribute : NSLayoutAttribute!
-    var constant : Float = 0.0
+    var toAttribute : NSLayoutAttribute!
+    var constant : CGFloat = 0.0
+    //MARK: constraint
+    lazy var constraint : NSLayoutConstraint = {
+        return NSLayoutConstraint(item : self.view,
+                                  attribute : self.attribute,
+                                  relatedBy : self.relation,
+                                  toItem : self.toView,
+                                  attribute : self.toAttribute,
+                                  multiplier : self.mutiplier,
+                                  constant : self.constant)
+        
+    }()
 }

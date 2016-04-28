@@ -9,8 +9,8 @@
 import UIKit
 
 protocol ELLayoutAttributeProtocol {
-    var ELLeft : ELLayoutConstraintModel { get }
-    var ELRight : ELLayoutConstraintModel { get }
-    var ELTop : ELLayoutConstraintModel { get }
-    var ELBottom : ELLayoutConstraintModel { get }
+    var ELLeft : ELConstraintItem { get }
+    var ELRight : ELConstraintItem { get }
+    var ELTop : ELConstraintItem { get }
+    var ELBottom : ELConstraintItem { get }
 }

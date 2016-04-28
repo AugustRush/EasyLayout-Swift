@@ -18,6 +18,7 @@
 		97C1E0DA1CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0D91CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift */; };
 		97C1E0DC1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0DB1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift */; };
 		97C1E0DE1CD2412D001E95D9 /* ELLayoutConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0DD1CD2412D001E95D9 /* ELLayoutConstraintModel.swift */; };
+		97C1E0E01CD253DE001E95D9 /* ELConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0DF1CD253DE001E95D9 /* ELConstraintItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		97C1E0D91CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutAttributeProtocol.swift; sourceTree = "<group>"; };
 		97C1E0DB1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintMaker.swift; sourceTree = "<group>"; };
 		97C1E0DD1CD2412D001E95D9 /* ELLayoutConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintModel.swift; sourceTree = "<group>"; };
+		97C1E0DF1CD253DE001E95D9 /* ELConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELConstraintItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				97C1E0D91CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift */,
 				97C1E0DB1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift */,
 				97C1E0DD1CD2412D001E95D9 /* ELLayoutConstraintModel.swift */,
+				97C1E0DF1CD253DE001E95D9 /* ELConstraintItem.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				97C1E0D81CD23846001E95D9 /* UIView(EasyLayout).swift in Sources */,
 				97C1E0DA1CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift in Sources */,
 				97C1E0DE1CD2412D001E95D9 /* ELLayoutConstraintModel.swift in Sources */,
+				97C1E0E01CD253DE001E95D9 /* ELConstraintItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

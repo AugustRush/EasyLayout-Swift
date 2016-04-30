@@ -20,7 +20,7 @@ class ELLayoutConstraintModel {
     private var attribute : NSLayoutAttribute!
     private var toAttribute : NSLayoutAttribute!
     private var constant : CGFloat = 0.0
-    
+    private weak var realConstraint : NSLayoutConstraint?
     //MARK: init
     init(view : View, attribute : NSLayoutAttribute) {
         self.view = view
@@ -59,14 +59,17 @@ class ELLayoutConstraintModel {
     }
 
     //MARK: constraint
-    lazy var constraint : NSLayoutConstraint = {
-        return NSLayoutConstraint(item : self.view,
-                                  attribute : self.attribute,
-                                  relatedBy : self.relation,
-                                  toItem : self.toView,
-                                  attribute : self.toAttribute,
-                                  multiplier : self.mutiplier,
-                                  constant : self.constant)
+    func constraint() -> NSLayoutConstraint {
+        if realConstraint == nil {
+            realConstraint =  NSLayoutConstraint(item : self.view,
+                                                 attribute : self.attribute,
+                                                 relatedBy : self.relation,
+                                                 toItem : self.toView,
+                                                 attribute : self.toAttribute,
+                                                 multiplier : self.mutiplier,
+                                                 constant : self.constant)
+        }
         
-    }()
+        return realConstraint!
+    }
 }

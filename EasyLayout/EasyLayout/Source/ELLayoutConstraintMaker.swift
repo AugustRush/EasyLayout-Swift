@@ -15,7 +15,7 @@ import AppKit
 class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     //MARK:properties
     private unowned var refereneView : View //Weak should be an optional value,use unowned
-    var models : [ELLayoutConstraintModel] = Array()
+    private var models : [ELLayoutConstraintModel] = Array()
     
     //MARK: init method
     init(view : View) {
@@ -42,8 +42,18 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     //MARK: public methods
     func install() {
         for model in models {
-            model.constraint.active = true
+            model.constraint().active = true
         }
+    }
+    
+    func removeAll() {
+        for model in models {
+            model.constraint().active = false
+        }
+    }
+    
+    func updateExsit() {
+        
     }
     
     //MARK: private methods
@@ -52,5 +62,11 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         models.append(model)
         return model
     }
-    
+}
+//A container use for weak objcet
+private class WeakObject<T : AnyObject> {
+    unowned var object : T
+    init(obj : T) {
+        object = obj
+    }
 }

@@ -13,4 +13,6 @@ protocol ELLayoutAttributeProtocol {
     var ELRight : ELLayoutConstraintModel { get }
     var ELTop : ELLayoutConstraintModel { get }
     var ELBottom : ELLayoutConstraintModel { get }
+    var ELWidth : ELLayoutConstraintModel { get }
+    var ELHeight : ELLayoutConstraintModel { get }
 }

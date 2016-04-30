@@ -23,6 +23,19 @@ extension View : ELLayoutAttributeProtocol {
         maker.install()
     }
     
+    func remakeConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        maker.removeAll()
+        closure(make: maker)
+        maker.install()
+    }
+
+    func updateConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        closure(make: maker)
+        maker.updateExsit()
+    }
+    
     //MARK: ELLayoutAttributeProtocol
     var ELLeft : ELLayoutConstraintModel {
         return constraintModel(NSLayoutAttribute.Left)
@@ -38,6 +51,14 @@ extension View : ELLayoutAttributeProtocol {
     
     var ELBottom : ELLayoutConstraintModel {
         return constraintModel(NSLayoutAttribute.Bottom)
+    }
+    
+    var ELWidth : ELLayoutConstraintModel {
+        return constraintModel(.Width)
+    }
+    
+    var ELHeight : ELLayoutConstraintModel {
+        return constraintModel(.Height)
     }
     
     private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {

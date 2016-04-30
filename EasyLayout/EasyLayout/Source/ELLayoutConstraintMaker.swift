@@ -39,6 +39,15 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return constraintModel(.Bottom)
     }
     
+    var ELWidth : ELLayoutConstraintModel {
+        return constraintModel(.Width)
+    }
+    
+    var ELHeight : ELLayoutConstraintModel {
+        return constraintModel(.Height)
+    }
+
+    
     //MARK: public methods
     func install() {
         for model in models {

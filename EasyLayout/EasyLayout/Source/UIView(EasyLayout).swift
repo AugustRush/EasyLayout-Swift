@@ -57,4 +57,4 @@ extension View : ELLayoutAttributeProtocol {
     }
 }
 
-private var ELLayoutConstraintMakerIdentifier = "_"
+private var ELLayoutConstraintMakerIdentifier = "_EasyLayoutMaker_"

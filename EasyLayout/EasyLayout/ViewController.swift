@@ -17,7 +17,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        layoutStyle1()
+    }
+
+    func layoutStyle1() {
         firstView.makeConstraints { (make) in
             make.ELLeft.equalTo(self.view.ELLeft).constant(10)
             make.ELTop.equalTo(self.view.ELTop).constant(10)
@@ -26,32 +29,45 @@ class ViewController: UIViewController {
         }
         
         secondView.makeConstraints { (make) in
-            make.ELLeft.equalTo(self.view.ELLeft).constant(20)
-            make.ELTop.equalTo(self.view.ELTop).constant(20)
-            make.ELBottom.equalTo(self.view.ELBottom).constant(-20)
-            make.ELRight.equalTo(self.view.ELRight).constant(-20)
+            make.ELLeft.equalTo(self.view.ELLeft).constant(40)
+            make.ELTop.equalTo(self.view.ELTop).constant(40)
+            make.ELBottom.equalTo(self.view.ELBottom).constant(-40)
+            make.ELRight.equalTo(self.view.ELRight).constant(-40)
         }
         
         thirdView.makeConstraints { (make) in
-            make.ELLeft.equalTo(self.view.ELLeft).constant(30)
-            make.ELTop.equalTo(self.view.ELTop).constant(30)
-            make.ELBottom.equalTo(self.view.ELBottom).constant(-30)
-            make.ELRight.equalTo(self.view.ELRight).constant(-30)
+            make.ELLeft.equalTo(self.view.ELLeft).constant(70)
+            make.ELTop.equalTo(self.view.ELTop).constant(70)
+            make.ELBottom.equalTo(self.view.ELBottom).constant(-70)
+            make.ELRight.equalTo(self.view.ELRight).constant(-70)
         }
         fouthView.makeConstraints { (make) in
-            make.ELLeft.equalTo(self.view.ELLeft).constant(30)
-            make.ELTop.equalTo(self.view.ELTop).constant(30)
-            make.ELBottom.equalTo(self.view.ELBottom).constant(-30)
-            make.ELRight.equalTo(self.view.ELRight).constant(-30)
-        }
-    }
-
-    @IBAction func updateButtonClicked(sender: AnyObject) {
-        firstView.makeConstraints { (make) in
-            make.removeAll()
+            make.ELLeft.equalTo(self.view.ELLeft).constant(100)
+            make.ELTop.equalTo(self.view.ELTop).constant(100)
+            make.ELBottom.equalTo(self.view.ELBottom).constant(-100)
+            make.ELRight.equalTo(self.view.ELRight).constant(-100)
         }
     }
     
+    @IBAction func remakeConstraints(sender: AnyObject) {
+        layoutStyle1()
+    }
+    
+    @IBAction func removeAllConstraints(sender: AnyObject) {
+        firstView.makeConstraints { (make) in
+            make.removeAll()
+        }
+        secondView.makeConstraints { (make) in
+            make.removeAll()
+        }
+        thirdView.makeConstraints { (make) in
+            make.removeAll()
+        }
+        fouthView.makeConstraints { (make) in
+            make.removeAll()
+        }
+
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

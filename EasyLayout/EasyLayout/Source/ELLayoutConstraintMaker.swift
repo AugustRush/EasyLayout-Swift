@@ -13,8 +13,8 @@ import AppKit
 #endif
 
 class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
-    //MARK:properties
-    private unowned var refereneView : View //Weak should be an optional value,use unowned
+    //MARK: properties
+    private weak var refereneView : View?
     private var models : [ELLayoutConstraintModel] = Array()
     
     //MARK: init method
@@ -24,19 +24,19 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     
     //MARK: ELLayoutAttributeProtocol
     var ELLeft : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Left)
+        return constraintModel(.Left)
     }
     
     var ELRight : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Right)
+        return constraintModel(.Right)
     }
     
     var ELTop : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Top)
+        return constraintModel(.Top)
     }
     
     var ELBottom : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Bottom)
+        return constraintModel(.Bottom)
     }
     
     //MARK: public methods
@@ -50,6 +50,7 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         for model in models {
             model.constraint().active = false
         }
+        models.removeAll()
     }
     
     func updateExsit() {
@@ -57,16 +58,9 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     }
     
     //MARK: private methods
-    private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
-        let model = ELLayoutConstraintModel(view: refereneView,attribute: attribute)
+    private func constraintModel(att : NSLayoutAttribute) -> ELLayoutConstraintModel {
+        let model = ELLayoutConstraintModel(view: refereneView!,attribute: att)
         models.append(model)
         return model
-    }
-}
-//A container use for weak objcet
-private class WeakObject<T : AnyObject> {
-    unowned var object : T
-    init(obj : T) {
-        object = obj
     }
 }

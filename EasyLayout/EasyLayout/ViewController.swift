@@ -19,7 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         firstView.makeConstraints { (make) in
-            make.ELLeft.equalTo(self.view.ELLeft)
+            make.ELLeft.equalTo(self.view.ELLeft).constant(10)
+            make.ELTop.equalTo(self.view.ELTop).constant(10)
+            make.ELBottom.equalTo(self.view.ELBottom).constant(-10)
+            make.ELRight.equalTo(self.view.ELRight).constant(-10)
         }
     }
 

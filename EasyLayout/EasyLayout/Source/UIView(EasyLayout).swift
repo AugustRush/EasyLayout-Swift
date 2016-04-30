@@ -15,32 +15,34 @@ public typealias View = NSView
 #endif
 
 extension View : ELLayoutAttributeProtocol {
-    typealias ELMaker = (make : ELLayoutConstraintMaker) -> Void
     //MARK: Make Constraints Methods
-    func makeConstraints(maker : ELMaker) {
-        
+    typealias ELMakerClosure = (make : ELLayoutConstraintMaker) -> Void
+    func makeConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        closure(make: maker)
+        maker.install()
     }
     
     //MARK: ELLayoutAttributeProtocol
-    var ELLeft : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Left)
+    var ELLeft : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Left)
     }
     
-    var ELRight : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Right)
+    var ELRight : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Right)
     }
     
-    var ELTop : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Top)
+    var ELTop : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Top)
     }
     
-    var ELBottom : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Bottom)
+    var ELBottom : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Bottom)
     }
     
-    private func constraintItem(attribute : NSLayoutAttribute) -> ELConstraintItem {
-        let item = ELConstraintItem()
-        return item
+    private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
+        let model = ELLayoutConstraintModel(view: self,attribute: attribute)
+        return model
     }
     
     private var maker : ELLayoutConstraintMaker {

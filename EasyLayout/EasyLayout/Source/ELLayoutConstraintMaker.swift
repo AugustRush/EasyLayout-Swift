@@ -13,32 +13,44 @@ import AppKit
 #endif
 
 class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
-    weak var refereneView : View?
+    //MARK:properties
+    private unowned var refereneView : View //Weak should be an optional value,use unowned
+    var models : [ELLayoutConstraintModel] = Array()
     
+    //MARK: init method
     init(view : View) {
         refereneView = view
     }
     
     //MARK: ELLayoutAttributeProtocol
-    var ELLeft : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Left)
+    var ELLeft : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Left)
     }
     
-    var ELRight : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Right)
+    var ELRight : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Right)
     }
     
-    var ELTop : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Top)
+    var ELTop : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Top)
     }
     
-    var ELBottom : ELConstraintItem {
-        return constraintItem(NSLayoutAttribute.Bottom)
+    var ELBottom : ELLayoutConstraintModel {
+        return constraintModel(NSLayoutAttribute.Bottom)
     }
     
-    private func constraintItem(attribute : NSLayoutAttribute) -> ELConstraintItem {
-        let item = ELConstraintItem()
-        return item
+    //MARK: public methods
+    func install() {
+        for model in models {
+            model.constraint.active = true
+        }
+    }
+    
+    //MARK: private methods
+    private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
+        let model = ELLayoutConstraintModel(view: refereneView,attribute: attribute)
+        models.append(model)
+        return model
     }
     
 }

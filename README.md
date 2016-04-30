@@ -1,2 +1,2 @@
 # EasyLayout
-#### Easy to use Autolayout, easier and stronger.
+#### Easy to use Autolayout, easier is stronger.

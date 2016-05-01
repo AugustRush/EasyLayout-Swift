@@ -49,6 +49,14 @@
                                     <action selector="removeAllConstraints:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fx-RO-8Md"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MPG-6E-4ze">
+                                <rect key="frame" x="136" y="457" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="update"/>
+                                <connections>
+                                    <action selector="updateAllConstrinats:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Yc-v5-ITg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

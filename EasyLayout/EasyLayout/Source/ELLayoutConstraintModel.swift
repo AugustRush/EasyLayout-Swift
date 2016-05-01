@@ -19,8 +19,20 @@ class ELLayoutConstraintModel {
     private var relation : NSLayoutRelation = .Equal
     private var attribute : NSLayoutAttribute!
     private var toAttribute : NSLayoutAttribute!
-    private var constant : CGFloat = 0.0
+    var constant : CGFloat = 0.0
     private weak var realConstraint : NSLayoutConstraint?
+    //This method must be call when all properties has been set value
+    lazy var identifier : String = {
+        var str = String()
+        str = str + String(unsafeAddressOf(self.view))
+        str = str + "/" + String(self.attribute.rawValue)
+        if self.relation != .Equal {
+            str = str + "/" + String(self.relation.rawValue)
+            str = str + "/" + String(unsafeAddressOf(self.toView))
+            str = str + "/" + String(self.toAttribute.rawValue)
+        }
+        return str
+    }()
     //MARK: init
     init(view : View, attribute : NSLayoutAttribute) {
         self.view = view
@@ -58,6 +70,11 @@ class ELLayoutConstraintModel {
         return self
     }
 
+    func isSameAs(model : ELLayoutConstraintModel) -> Bool {
+        return (self.identifier == model.identifier)
+            && (self.toView == model.toView)
+            && (self.mutiplier == self.mutiplier);
+    }
     //MARK: constraint
     func constraint() -> NSLayoutConstraint {
         if realConstraint == nil {

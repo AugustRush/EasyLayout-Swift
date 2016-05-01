@@ -15,7 +15,10 @@ import AppKit
 class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     //MARK: properties
     private weak var refereneView : View?
-    private var models : [ELLayoutConstraintModel] = Array()
+    //use for store constraints models temporary
+    private var tmpModels : [ELLayoutConstraintModel] = Array()
+    //has installed constraint's Models
+    private var installedModels : [String : ELLayoutConstraintModel] = Dictionary()
     
     //MARK: init method
     init(view : View) {
@@ -50,26 +53,50 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     
     //MARK: public methods
     func install() {
-        for model in models {
-            model.constraint().active = true
+        for model in tmpModels {
+            self.installConstraint(model)
         }
+        tmpModels.removeAll()
     }
     
     func removeAll() {
-        for model in models {
+        for model in installedModels.values {
             model.constraint().active = false
         }
-        models.removeAll()
+        installedModels.removeAll()
     }
     
     func updateExsit() {
-        
+        for model in tmpModels {
+            let identifier = model.identifier
+            let exsitModel = installedModels[identifier]
+            if let m = exsitModel {
+                if m.isSameAs(model) {
+                    m.constant = model.constant
+                    m.constraint().constant = model.constant
+                }else{
+                    m.constraint().active = false
+                    self.installConstraint(model)
+                }
+            }else{
+                self.installConstraint(model)
+            }
+        }
+        //remove all tmp models
+        tmpModels.removeAll()
     }
     
     //MARK: private methods
     private func constraintModel(att : NSLayoutAttribute) -> ELLayoutConstraintModel {
         let model = ELLayoutConstraintModel(view: refereneView!,attribute: att)
-        models.append(model)
+        tmpModels.append(model)
         return model
+    }
+    
+    private func installConstraint(model : ELLayoutConstraintModel) {
+        let constraint = model.constraint()
+        constraint.active = true
+        let identifier = model.identifier
+        installedModels[identifier] = model
     }
 }

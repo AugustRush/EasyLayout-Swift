@@ -81,6 +81,15 @@ class ViewController: UIViewController {
 
     }
     
+    func layoutStyle3() {
+        firstView.updateConstraints { (make) in
+            make.ELLeft.equalTo(self.view.ELLeft).constant(50)
+            make.ELTop.equalTo(self.view.ELTop).constant(50)
+            make.ELBottom.equalTo(self.view.ELBottom).constant(-50)
+            make.ELRight.equalTo(self.view.ELRight).constant(-50)
+        }
+    }
+    
     //MARK: event methods
     @IBAction func remakeConstraints(sender: AnyObject) {
         layoutStyle2()
@@ -104,6 +113,14 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    @IBAction func updateAllConstrinats(sender: AnyObject) {
+        layoutStyle3()
+        UIView.animateWithDuration(0.5) { 
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -22,27 +22,27 @@ class ViewController: UIViewController {
 
     //MARK: layout methods
     func layoutStyle1() {
-        firstView.makeConstraints { (make) in
+        firstView.remakeConstraints { (make) in
             make.ELLeft.equalTo(self.view.ELLeft).constant(10)
             make.ELTop.equalTo(self.view.ELTop).constant(10)
             make.ELBottom.equalTo(self.view.ELBottom).constant(-10)
             make.ELRight.equalTo(self.view.ELRight).constant(-10)
         }
         
-        secondView.makeConstraints { (make) in
+        secondView.remakeConstraints { (make) in
             make.ELLeft.equalTo(self.view.ELLeft).constant(40)
             make.ELTop.equalTo(self.view.ELTop).constant(40)
             make.ELBottom.equalTo(self.view.ELBottom).constant(-40)
             make.ELRight.equalTo(self.view.ELRight).constant(-40)
         }
         
-        thirdView.makeConstraints { (make) in
+        thirdView.remakeConstraints { (make) in
             make.ELLeft.equalTo(self.view.ELLeft).constant(70)
             make.ELTop.equalTo(self.view.ELTop).constant(70)
             make.ELBottom.equalTo(self.view.ELBottom).constant(-70)
             make.ELRight.equalTo(self.view.ELRight).constant(-70)
         }
-        fouthView.makeConstraints { (make) in
+        fouthView.remakeConstraints { (make) in
             make.ELLeft.equalTo(self.view.ELLeft).constant(100)
             make.ELTop.equalTo(self.view.ELTop).constant(100)
             make.ELBottom.equalTo(self.view.ELBottom).constant(-100)
@@ -78,19 +78,29 @@ class ViewController: UIViewController {
             make.ELWidth.equalTo(self.secondView.ELWidth)
             make.ELHeight.equalTo(self.secondView.ELHeight)
         }
-
     }
     
     func layoutStyle3() {
         firstView.updateConstraints { (make) in
-            make.ELLeft.equalTo(self.view.ELLeft).constant(50)
-            make.ELTop.equalTo(self.view.ELTop).constant(50)
-            make.ELBottom.equalTo(self.view.ELBottom).constant(-50)
-            make.ELRight.equalTo(self.view.ELRight).constant(-50)
+            make.ELLeft.equalTo(self.view.ELLeft).constant(10)
+            make.ELTop.equalTo(self.view.ELTop).constant(10)
+            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.3)
+            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.3)
+        }
+        
+        secondView.updateConstraints { (make) in
+            make.ELRight.equalTo(self.view.ELRight).constant(-10)
+            make.ELTop.equalTo(self.view.ELTop).constant(10)
+            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.3)
+            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.3)
         }
     }
     
     //MARK: event methods
+    @IBAction func initialLayout(sender: AnyObject) {
+        layoutStyle1()
+    }
+    
     @IBAction func remakeConstraints(sender: AnyObject) {
         layoutStyle2()
         UIView.animateWithDuration(0.5) { 

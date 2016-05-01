@@ -38,19 +38,19 @@ extension View : ELLayoutAttributeProtocol {
     
     //MARK: ELLayoutAttributeProtocol
     var ELLeft : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Left)
+        return constraintModel(.Left)
     }
     
     var ELRight : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Right)
+        return constraintModel(.Right)
     }
     
     var ELTop : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Top)
+        return constraintModel(.Top)
     }
     
     var ELBottom : ELLayoutConstraintModel {
-        return constraintModel(NSLayoutAttribute.Bottom)
+        return constraintModel(.Bottom)
     }
     
     var ELWidth : ELLayoutConstraintModel {

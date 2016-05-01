@@ -73,7 +73,7 @@ class ELLayoutConstraintModel {
     func isSameAs(model : ELLayoutConstraintModel) -> Bool {
         return (self.identifier == model.identifier)
             && (self.toView == model.toView)
-            && (self.mutiplier == self.mutiplier);
+            && (self.mutiplier == model.mutiplier);
     }
     //MARK: constraint
     func constraint() -> NSLayoutConstraint {

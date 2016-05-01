@@ -61,6 +61,61 @@ extension View : ELLayoutAttributeProtocol {
         return constraintModel(.Height)
     }
     
+    var ELNone : ELLayoutConstraintModel {
+        return constraintModel(.NotAnAttribute)
+    }
+    var ELCenterX : ELLayoutConstraintModel {
+        return constraintModel(.CenterX)
+    }
+    var ELCenterY : ELLayoutConstraintModel {
+        return constraintModel(.CenterY)
+    }
+    var ELLeading : ELLayoutConstraintModel {
+        return constraintModel(.Leading)
+    }
+    var ELTrailing : ELLayoutConstraintModel {
+        return constraintModel(.Trailing)
+    }
+    var ELBaseline : ELLayoutConstraintModel {
+        return constraintModel(.Baseline)
+    }
+    var ELLastBaseline : ELLayoutConstraintModel {
+        return constraintModel(.LastBaseline)
+    }
+    
+    @available(iOS 8.0, *)
+    var ELFirstBaseline : ELLayoutConstraintModel {
+        return constraintModel(.FirstBaseline)
+    }
+    @available(iOS 8.0, *)
+    var ELLeftMargin : ELLayoutConstraintModel {
+        return constraintModel(.LeftMargin)
+    }
+    @available(iOS 8.0, *)
+    var ELRightMargin : ELLayoutConstraintModel {
+        return constraintModel(.RightMargin)
+    }
+    @available(iOS 8.0, *)
+    var ELBottomMargin : ELLayoutConstraintModel {
+        return constraintModel(.BottomMargin)
+    }
+    @available(iOS 8.0, *)
+    var ELLeadingMargin : ELLayoutConstraintModel {
+        return constraintModel(.LeadingMargin)
+    }
+    @available(iOS 8.0, *)
+    var ELTrailingMargin : ELLayoutConstraintModel {
+        return constraintModel(.TrailingMargin)
+    }
+    @available(iOS 8.0, *)
+    var ELCenterXWithMargins : ELLayoutConstraintModel {
+        return constraintModel(.CenterXWithinMargins)
+    }
+    @available(iOS 8.0, *)
+    var ELCenterYWithMargins : ELLayoutConstraintModel {
+        return constraintModel(.CenterYWithinMargins)
+    }
+    
     private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
         let model = ELLayoutConstraintModel(view: self,attribute: attribute)
         return model

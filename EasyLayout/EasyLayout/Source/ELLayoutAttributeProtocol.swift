@@ -15,4 +15,28 @@ protocol ELLayoutAttributeProtocol {
     var ELBottom : ELLayoutConstraintModel { get }
     var ELWidth : ELLayoutConstraintModel { get }
     var ELHeight : ELLayoutConstraintModel { get }
+    var ELNone : ELLayoutConstraintModel { get }
+    var ELCenterX : ELLayoutConstraintModel { get }
+    var ELCenterY : ELLayoutConstraintModel { get }
+    var ELLeading : ELLayoutConstraintModel { get }
+    var ELTrailing : ELLayoutConstraintModel { get }
+    var ELBaseline : ELLayoutConstraintModel { get }
+    var ELLastBaseline : ELLayoutConstraintModel { get }
+    //
+    @available(iOS 8.0, *)
+    var ELFirstBaseline : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELLeftMargin : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELRightMargin : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELBottomMargin : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELLeadingMargin : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELTrailingMargin : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELCenterXWithMargins : ELLayoutConstraintModel { get }
+    @available(iOS 8.0, *)
+    var ELCenterYWithMargins : ELLayoutConstraintModel { get }
 }

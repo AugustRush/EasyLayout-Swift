@@ -19,6 +19,7 @@ public class ELLayoutConstraintModel {
     private var relation : NSLayoutRelation = .Equal
     var attribute : NSLayoutAttribute!
     var toAttribute : NSLayoutAttribute!
+    private var priority : UILayoutPriority = UILayoutPriorityDefaultHigh
     var constant : CGFloat = 0.0
     private weak var realConstraint : NSLayoutConstraint?
     //This method must be call when all properties has been set value
@@ -59,6 +60,11 @@ public class ELLayoutConstraintModel {
     
     func mutiplier(m : CGFloat) -> ELLayoutConstraintModel {
         mutiplier = m
+        return self
+    }
+    
+    func priority(p : UILayoutPriority) -> ELLayoutConstraintModel {
+        priority = p
         return self
     }
     

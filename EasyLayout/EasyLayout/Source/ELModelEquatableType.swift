@@ -16,6 +16,9 @@ extension ELLayoutConstraintModel : ELModelEquatableType {
     public func supplementModel(m: ELLayoutConstraintModel) {
         m.toView = self.view
         m.toAttribute = self.attribute
+        //operator priority '+' > '==' ,so need to assigment, or change the operator priority
+        m.constant = self.constant
+        m.mutiplier = self.mutiplier
     }
 }
 

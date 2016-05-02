@@ -16,22 +16,22 @@
                             <view contentMode="scaleToFill" id="54g-3n-Rpc">
                                 <rect key="frame" x="20" y="79" width="129" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93632190240000002" green="0.12854005560000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99121788426698776" green="0.47081787474521741" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="LtP-rH-VNH">
                                 <rect key="frame" x="171" y="79" width="129" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.52039898962443054" green="1" blue="0.36738579762428725" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.65562852262353344" green="1" blue="0.47880876036986497" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="epb-47-cCd">
                                 <rect key="frame" x="20" y="208" width="129" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20969196634373888" green="0.2543005022704149" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44199855924570008" green="0.67638593996542595" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="jGk-dx-azE">
                                 <rect key="frame" x="171" y="208" width="129" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.27598359011293949" blue="0.26771845807267658" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.27009140703050227" blue="0.81659191778997164" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5zR-Q9-7df">
                                 <rect key="frame" x="124" y="487" width="72" height="30"/>
@@ -49,14 +49,6 @@
                                     <action selector="updateAllConstrinats:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Yc-v5-ITg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbX-NW-cze">
-                                <rect key="frame" x="140" y="373" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="initial"/>
-                                <connections>
-                                    <action selector="initialLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHh-vf-waB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="khf-g0-QB4">
                                 <rect key="frame" x="133" y="411" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,9 +57,18 @@
                                     <action selector="remakeConstraints:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cg6-Se-yXX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbX-NW-cze">
+                                <rect key="frame" x="142" y="373" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="initial"/>
+                                <connections>
+                                    <action selector="initialLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHh-vf-waB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="firstView" destination="54g-3n-Rpc" id="41u-BR-kut"/>
                         <outlet property="fouthView" destination="jGk-dx-azE" id="TJL-Pt-aDx"/>

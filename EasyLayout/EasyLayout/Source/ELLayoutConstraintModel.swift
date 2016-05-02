@@ -15,11 +15,11 @@ import AppKit
 public class ELLayoutConstraintModel {
     weak var view : View!
     weak var toView : View!
-    private var mutiplier : CGFloat = 1.0
     private var relation : NSLayoutRelation = .Equal
     var attribute : NSLayoutAttribute!
     var toAttribute : NSLayoutAttribute!
     private var priority : UILayoutPriority = UILayoutPriorityDefaultHigh
+    var mutiplier : CGFloat = 1.0
     var constant : CGFloat = 0.0
     private weak var realConstraint : NSLayoutConstraint?
     //This method must be call when all properties has been set value

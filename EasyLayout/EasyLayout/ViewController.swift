@@ -25,80 +25,72 @@ class ViewController: UIViewController {
         firstView.remakeConstraints { (make) in
             make.ELLeft.equalTo(10.0)
             make.ELTop.equalTo(10)
-            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.5)
-            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.5)
+            make.ELBottom.equalTo(-10)
+            make.ELRight.equalTo(-10)
         }
         
-//        secondView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.view.ELLeft).constant(40)
-//            make.ELTop.equalTo(self.view.ELTop).constant(40)
-//            make.ELBottom.equalTo(self.view.ELBottom).constant(-40)
-//            make.ELRight.equalTo(self.view.ELRight).constant(-40)
-//        }
-//        
-//        thirdView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.view.ELLeft).constant(70)
-//            make.ELTop.equalTo(self.view.ELTop).constant(70)
-//            make.ELBottom.equalTo(self.view.ELBottom).constant(-70)
-//            make.ELRight.equalTo(self.view.ELRight).constant(-70)
-//        }
-//        fouthView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.view.ELLeft).constant(100)
-//            make.ELTop.equalTo(self.view.ELTop).constant(100)
-//            make.ELBottom.equalTo(self.view.ELBottom).constant(-100)
-//            make.ELRight.equalTo(self.view.ELRight).constant(-100)
-//        }
+        secondView.remakeConstraints { (make) in
+            make.ELLeft.equalTo(40)
+            make.ELTop.equalTo(40)
+            make.ELBottom.equalTo(-40)
+            make.ELRight.equalTo(-40)
+        }
+        
+        thirdView.remakeConstraints { (make) in
+            make.ELLeft.equalTo(70)
+            make.ELTop.equalTo(70)
+            make.ELBottom.equalTo(-70)
+            make.ELRight.equalTo(-70)
+        }
+        fouthView.remakeConstraints { (make) in
+            make.ELLeft.equalTo(100)
+            make.ELTop.equalTo(100)
+            make.ELBottom.equalTo(-100)
+            make.ELRight.equalTo(-100)
+        }
     }
     
     func layoutStyle2() {
-//        firstView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.view.ELLeft).constant(10)
-//            make.ELTop.equalTo(self.view.ELTop).constant(10)
-//            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.4)
-//            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.4)
-//        }
-//        
-//        secondView.remakeConstraints { (make) in
-//            make.ELRight.equalTo(self.view.ELRight).constant(-10)
-//            make.ELTop.equalTo(self.view.ELTop).constant(10)
-//            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.4)
-//            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.4)
-//        }
-//        
-//        thirdView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.firstView.ELLeft)
-//            make.ELTop.equalTo(self.firstView.ELBottom).constant(10)
-//            make.ELWidth.equalTo(self.firstView.ELWidth)
-//            make.ELHeight.equalTo(self.firstView.ELHeight)
-//        }
-//        
-//        fouthView.remakeConstraints { (make) in
-//            make.ELLeft.equalTo(self.secondView.ELLeft)
-//            make.ELTop.equalTo(self.secondView.ELBottom).constant(10)
-//            make.ELWidth.equalTo(self.secondView.ELWidth)
-//            make.ELHeight.equalTo(self.secondView.ELHeight)
-//        }
+        firstView.remakeConstraints { (make) in
+            make.ELLeft.equalTo(10)
+            make.ELTop.equalTo(10)
+            make.ELWidth.equalTo(140)
+            make.ELHeight.equalTo(160)
+        }
+        
+        secondView.remakeConstraints { (make) in
+            make.ELTop.equalTo(10)
+            make.ELRight.equalTo(-10)
+            make.ELWidth.equalTo(self.firstView)
+            make.ELHeight.equalTo(self.firstView)
+        }
+        
+        thirdView.remakeConstraints { (make) in
+            make.ELTop.equalTo(self.firstView.ELBottom).constant(10)
+            make.ELLeft.equalTo(10)
+            make.ELWidth.equalTo(self.firstView)
+            make.ELHeight.equalTo(self.firstView)
+        }
+        
+        fouthView.remakeConstraints { (make) in
+            make.ELTop.equalTo(self.secondView.ELBottom).constant(10)
+            make.ELRight.equalTo(-10)
+            make.ELWidth.equalTo(self.firstView)
+            make.ELHeight.equalTo(self.firstView)
+        }
+
     }
     
     func layoutStyle3() {
-//        firstView.updateConstraints { (make) in
-//            make.ELLeft.equalTo(self.view.ELLeft).constant(10)
-//            make.ELTop.equalTo(self.view.ELTop).constant(10)
-//            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.3)
-//            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.3)
-//        }
-//        
-//        secondView.updateConstraints { (make) in
-//            make.ELRight.equalTo(self.view.ELRight).constant(-10)
-//            make.ELTop.equalTo(self.view.ELTop).constant(10)
-//            make.ELWidth.equalTo(self.view.ELWidth).mutiplier(0.3)
-//            make.ELHeight.equalTo(self.view.ELHeight).mutiplier(0.3)
-//        }
+
     }
     
     //MARK: event methods
     @IBAction func initialLayout(sender: AnyObject) {
         layoutStyle1()
+        UIView.animateWithDuration(0.5) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     @IBAction func remakeConstraints(sender: AnyObject) {

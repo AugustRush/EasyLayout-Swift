@@ -37,6 +37,13 @@ extension CGFloat : ELModelEquatableType {
     }
 }
 
+extension View : ELModelEquatableType {
+    public func supplementModel(m: ELLayoutConstraintModel) {
+        m.toView = self
+        m.toAttribute = m.attribute
+    }
+}
+
 
 private func configurationModel(m : ELLayoutConstraintModel , constant : CGFloat) {
     if m.attribute != NSLayoutAttribute.Width

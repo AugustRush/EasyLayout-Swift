@@ -12,13 +12,13 @@ import UIKit
 import AppKit
 #endif
 
-class ELLayoutConstraintModel {
-    private weak var view : View!
-    private weak var toView : View!
+public class ELLayoutConstraintModel {
+    weak var view : View!
+    weak var toView : View!
     private var mutiplier : CGFloat = 1.0
     private var relation : NSLayoutRelation = .Equal
-    private var attribute : NSLayoutAttribute!
-    private var toAttribute : NSLayoutAttribute!
+    var attribute : NSLayoutAttribute!
+    var toAttribute : NSLayoutAttribute!
     var constant : CGFloat = 0.0
     private weak var realConstraint : NSLayoutConstraint?
     //This method must be call when all properties has been set value
@@ -39,24 +39,21 @@ class ELLayoutConstraintModel {
         self.attribute = attribute
     }
     //MARK: public methods
-    func equalTo(model : ELLayoutConstraintModel) -> ELLayoutConstraintModel {
+    func equalTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
         relation = .Equal
-        toView = model.view
-        toAttribute = model.attribute
+        paramater.supplementModel(self);
         return self
     }
     
-    func greaterThanOrEqualTo(model : ELLayoutConstraintModel) -> ELLayoutConstraintModel {
+    func greaterThanOrEqualTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
         relation = .GreaterThanOrEqual
-        toView = model.view
-        toAttribute = model.attribute
+        paramater.supplementModel(self)
         return self
     }
     
-    func lessThanOrEqualTo(model : ELLayoutConstraintModel) -> ELLayoutConstraintModel {
+    func lessThanOrEqualTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
         relation = .LessThanOrEqual
-        toView = model.view
-        toAttribute = model.attribute
+        paramater.supplementModel(self)
         return self
     }
     

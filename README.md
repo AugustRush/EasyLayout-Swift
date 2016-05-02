@@ -4,7 +4,10 @@
 ### Objective-C version
 ##### https://github.com/AugustRush/EasyLayout
 
-### How to use
+## Demo GIf
+<img src="https://github.com/AugustRush/EasyLayout/blob/develop/demo.gif" width="320">
+
+## How to use
 
 ```
 view.makeConstraints { (make) in
@@ -17,7 +20,7 @@ view.makeConstraints { (make) in
 OR:
 
 ```
-firstView.makeConstraints { (make) in
+view.makeConstraints { (make) in
    	make.ELLeft.equalTo(10)
    	make.ELTop.equalTo(10)
 	make.ELWidth.equalTo(self.view).mutiplier(0.5).constant(-30)
@@ -25,12 +28,12 @@ firstView.makeConstraints { (make) in
  }
 
 ```
-### Next to do
+## Next to do
 ##### add combination attributes method
 ##### More Easier?(how to do???)
 ##### file -> UIView
 
-### License (MIT)
+## License (MIT)
 ```
 Copyright (c) 2016 
 

@@ -82,7 +82,10 @@ class ViewController: UIViewController {
     }
     
     func layoutStyle3() {
-
+        firstView.updateConstraints { (make) in
+            make.ELWidth == self.view.ELWidth / 1 - 20
+            make.ELHeight == self.view.ELHeight / 1 - 20
+        }
     }
     
     //MARK: event methods

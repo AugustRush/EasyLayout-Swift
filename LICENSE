@@ -1,37 +1,5 @@
-# EasyLayout
-#### Easy to use Autolayout, easier is stronger.
+The MIT License (MIT)
 
-### Objective-C version
-##### https://github.com/AugustRush/EasyLayout
-
-### How to use
-
-```
-view.makeConstraints { (make) in
-   make.ELLeft == 10
-   make.ELTop == 10
-   make.ELWidth == self.view.ELWidth / 2 - 30
-   make.ELHeight == self.view.ELHeight / 3 - 30
-}
-```
-OR:
-
-```
-firstView.makeConstraints { (make) in
-   	make.ELLeft.equalTo(10)
-   	make.ELTop.equalTo(10)
-	make.ELWidth.equalTo(self.view).mutiplier(0.5).constant(-30)
-   	make.ELHeight.equalTo(self.view).mutiplier(0.5).constant(-30)
- }
-
-```
-### Next to do
-##### add combination attributes method
-##### More Easier?(how to do???)
-##### file -> UIView
-
-### License (MIT)
-```
 Copyright (c) 2016 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -51,4 +19,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+

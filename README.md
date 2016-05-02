@@ -5,7 +5,7 @@
 ##### https://github.com/AugustRush/EasyLayout
 
 ## Demo GIf
-<img src="https://github.com/AugustRush/EasyLayout/blob/develop/demo.gif" width="320">
+<img src="https://github.com/AugustRush/EasyLayout-Swift/blob/master/demo.gif" width="320">
 
 ## How to use
 

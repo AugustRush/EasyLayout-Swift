@@ -1,5 +1,5 @@
 //
-//  ELLayoutConstraintMaker.swift
+//  UIView(EasyLayout).swift
 //  EasyLayout
 //
 //  Created by AugustRush on 4/28/16.
@@ -8,21 +8,32 @@
 
 #if os(iOS) || os(tvOS)
 import UIKit
+public typealias View = UIView
 #else
 import AppKit
+public typealias View = NSView
 #endif
 
-class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
-    //MARK: properties
-    private weak var refereneView : View?
-    //use for store constraints models temporary
-    private var tmpModels : [ELLayoutConstraintModel] = Array()
-    //has installed constraint's Models
-    private var installedModels : [String : ELLayoutConstraintModel] = Dictionary()
+extension View : ELLayoutAttributeProtocol {
+    //MARK: Make Constraints Methods
+    typealias ELMakerClosure = (make : ELLayoutConstraintMaker) -> Void
+    func makeConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        closure(make: maker)
+        maker.install()
+    }
     
-    //MARK: init method
-    init(view : View) {
-        refereneView = view
+    func remakeConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        maker.removeAll()
+        closure(make: maker)
+        maker.install()
+    }
+
+    func updateConstraints(closure : ELMakerClosure) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        closure(make: maker)
+        maker.updateExsit()
     }
     
     //MARK: ELLayoutAttributeProtocol
@@ -49,7 +60,7 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     var ELHeight : ELLayoutConstraintModel {
         return constraintModel(.Height)
     }
-
+    
     var ELNone : ELLayoutConstraintModel {
         return constraintModel(.NotAnAttribute)
     }
@@ -71,9 +82,8 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     var ELLastBaseline : ELLayoutConstraintModel {
         return constraintModel(.LastBaseline)
     }
-    
     var ELSize : ELLayoutCombinationConstraintModel {
-        return ELLayoutCombinationConstraintModel()
+        return ELLayoutCombinationConstraintModel(models: self.ELWidth,self.ELHeight)
     }
     
     @available(iOS 8.0, *)
@@ -108,52 +118,22 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     var ELCenterYWithMargins : ELLayoutConstraintModel {
         return constraintModel(.CenterYWithinMargins)
     }
-    //MARK: public methods
-    func install() {
-        for model in tmpModels {
-            self.installConstraint(model)
-        }
-        tmpModels.removeAll()
-    }
     
-    func removeAll() {
-        for model in installedModels.values {
-            model.constraint().active = false
-        }
-        installedModels.removeAll()
-    }
-    
-    func updateExsit() {
-        for model in tmpModels {
-            let identifier = model.identifier
-            let exsitModel = installedModels[identifier]
-            if let m = exsitModel {
-                if m.isSameAs(model) {
-                    m.constant = model.constant
-                    m.constraint().constant = model.constant
-                }else{
-                    m.constraint().active = false
-                    self.installConstraint(model)
-                }
-            }else{
-                self.installConstraint(model)
-            }
-        }
-        //remove all tmp models
-        tmpModels.removeAll()
-    }
-    
-    //MARK: private methods
-    private func constraintModel(att : NSLayoutAttribute) -> ELLayoutConstraintModel {
-        let model = ELLayoutConstraintModel(view: refereneView!,attribute: att)
-        tmpModels.append(model)
+    private func constraintModel(attribute : NSLayoutAttribute) -> ELLayoutConstraintModel {
+        let model = ELLayoutConstraintModel(view: self,attribute: attribute)
         return model
     }
     
-    private func installConstraint(model : ELLayoutConstraintModel) {
-        let constraint = model.constraint()
-        constraint.active = true
-        let identifier = model.identifier
-        installedModels[identifier] = model
+    private var maker : ELLayoutConstraintMaker {
+        get {
+            var make = objc_getAssociatedObject(self, &ELLayoutConstraintMakerIdentifier) as? ELLayoutConstraintMaker
+            if make == nil {
+                make = ELLayoutConstraintMaker(view : self)
+                objc_setAssociatedObject(self, &ELLayoutConstraintMakerIdentifier, make, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+            return make!
+        }
     }
 }
+
+private var ELLayoutConstraintMakerIdentifier = "_EasyLayoutMaker_"

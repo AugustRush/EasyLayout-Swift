@@ -9,8 +9,10 @@
 import Foundation
 
 class ELLayoutCombinationConstraintModel {
+    //MARK: property
     private var layoutModels : [ELLayoutConstraintModel] = Array()
-    init(models : ELLayoutConstraintModel...) {
+    
+    required init(models : ELLayoutConstraintModel...) {
         for m in models {
             layoutModels.append(m)
         }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		974BFEC91CD725A0002A58AB /* ELModelEquatableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974BFEC81CD725A0002A58AB /* ELModelEquatableType.swift */; };
 		974BFECB1CD74B37002A58AB /* ELOperatorsOverloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974BFECA1CD74B37002A58AB /* ELOperatorsOverloading.swift */; };
+		974BFECD1CD8453A002A58AB /* ELLayoutCombinationConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974BFECC1CD8453A002A58AB /* ELLayoutCombinationConstraintModel.swift */; };
 		97C1E0A91CD237BF001E95D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */; };
 		97C1E0AB1CD237BF001E95D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0AA1CD237BF001E95D9 /* ViewController.swift */; };
 		97C1E0AE1CD237BF001E95D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C1E0AC1CD237BF001E95D9 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		974BFEC81CD725A0002A58AB /* ELModelEquatableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELModelEquatableType.swift; sourceTree = "<group>"; };
 		974BFECA1CD74B37002A58AB /* ELOperatorsOverloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELOperatorsOverloading.swift; sourceTree = "<group>"; };
+		974BFECC1CD8453A002A58AB /* ELLayoutCombinationConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutCombinationConstraintModel.swift; sourceTree = "<group>"; };
 		97C1E0A51CD237BF001E95D9 /* EasyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97C1E0AA1CD237BF001E95D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				97C1E0D91CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift */,
 				97C1E0DB1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift */,
 				97C1E0DD1CD2412D001E95D9 /* ELLayoutConstraintModel.swift */,
+				974BFECC1CD8453A002A58AB /* ELLayoutCombinationConstraintModel.swift */,
 				974BFEC81CD725A0002A58AB /* ELModelEquatableType.swift */,
 				974BFECA1CD74B37002A58AB /* ELOperatorsOverloading.swift */,
 			);
@@ -286,6 +289,7 @@
 				974BFECB1CD74B37002A58AB /* ELOperatorsOverloading.swift in Sources */,
 				97C1E0AB1CD237BF001E95D9 /* ViewController.swift in Sources */,
 				97C1E0A91CD237BF001E95D9 /* AppDelegate.swift in Sources */,
+				974BFECD1CD8453A002A58AB /* ELLayoutCombinationConstraintModel.swift in Sources */,
 				97C1E0DC1CD240E9001E95D9 /* ELLayoutConstraintMaker.swift in Sources */,
 				97C1E0D81CD23846001E95D9 /* UIView(EasyLayout).swift in Sources */,
 				97C1E0DA1CD238EF001E95D9 /* ELLayoutAttributeProtocol.swift in Sources */,

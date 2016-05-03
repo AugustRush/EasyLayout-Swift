@@ -1,5 +1,5 @@
 # EasyLayout
-#### Easy to use Autolayout, easier is stronger.
+#### Easy to use Autolayout for iOS/tvOS/OSX, easier is stronger.
 
 ### Objective-C version
 ##### https://github.com/AugustRush/EasyLayout
@@ -8,6 +8,15 @@
 <img src="https://github.com/AugustRush/EasyLayout-Swift/blob/master/demo.gif" width="320">
 
 ## How to use
+```
+firstView.makeConstraints {
+   $0.ELLeft == 10
+   $0.ELTop == 10
+   $0.ELWidth == self.view.ELWidth / 2 - 30
+   $0.ELHeight == self.view.ELHeight / 3 - 30
+ }
+```
+OR:
 
 ```
 view.makeConstraints { (make) in

@@ -72,10 +72,6 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return constraintModel(.LastBaseline)
     }
     
-    var ELSize : ELLayoutCombinationConstraintModel {
-        return ELLayoutCombinationConstraintModel(models: self.ELWidth,self.ELHeight)
-    }
-    
     @available(iOS 8.0, *)
     var ELFirstBaseline : ELLayoutConstraintModel {
         return constraintModel(.FirstBaseline)

@@ -82,9 +82,6 @@ extension View : ELLayoutAttributeProtocol {
     var ELLastBaseline : ELLayoutConstraintModel {
         return constraintModel(.LastBaseline)
     }
-    var ELSize : ELLayoutCombinationConstraintModel {
-        return ELLayoutCombinationConstraintModel(models: self.ELWidth,self.ELHeight)
-    }
     
     @available(iOS 8.0, *)
     var ELFirstBaseline : ELLayoutConstraintModel {

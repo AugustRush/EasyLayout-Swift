@@ -15,7 +15,6 @@
 		97C1E0BE1CD237C0001E95D9 /* EasyLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0BD1CD237C0001E95D9 /* EasyLayoutTests.swift */; };
 		97C1E0C91CD237C0001E95D9 /* EasyLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0C81CD237C0001E95D9 /* EasyLayoutUITests.swift */; };
 		97F494B91CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */; };
-		97F494BA1CD8952800DC7CCE /* ELLayoutCombinationConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B31CD8952800DC7CCE /* ELLayoutCombinationConstraintModel.swift */; };
 		97F494BB1CD8952800DC7CCE /* ELLayoutConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */; };
 		97F494BC1CD8952800DC7CCE /* ELLayoutConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */; };
 		97F494BD1CD8952800DC7CCE /* ELModelEquatableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */; };
@@ -55,7 +54,6 @@
 		97C1E0C81CD237C0001E95D9 /* EasyLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLayoutUITests.swift; sourceTree = "<group>"; };
 		97C1E0CA1CD237C0001E95D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutAttributeProtocol.swift; sourceTree = "<group>"; };
-		97F494B31CD8952800DC7CCE /* ELLayoutCombinationConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutCombinationConstraintModel.swift; sourceTree = "<group>"; };
 		97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintMaker.swift; sourceTree = "<group>"; };
 		97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintModel.swift; sourceTree = "<group>"; };
 		97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELModelEquatableType.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */,
 				97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */,
 				97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */,
-				97F494B31CD8952800DC7CCE /* ELLayoutCombinationConstraintModel.swift */,
 				97F494B71CD8952800DC7CCE /* ELOperatorsOverloading.swift */,
 			);
 			path = Sources;
@@ -292,7 +289,6 @@
 				97C1E0AB1CD237BF001E95D9 /* ViewController.swift in Sources */,
 				97F494BB1CD8952800DC7CCE /* ELLayoutConstraintMaker.swift in Sources */,
 				97C1E0A91CD237BF001E95D9 /* AppDelegate.swift in Sources */,
-				97F494BA1CD8952800DC7CCE /* ELLayoutCombinationConstraintModel.swift in Sources */,
 				97F494BC1CD8952800DC7CCE /* ELLayoutConstraintModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

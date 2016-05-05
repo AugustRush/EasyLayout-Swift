@@ -39,7 +39,7 @@ class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func lessThanOrEqualTo(ms : [ELModelEquatableType]) -> ELLayoutCombinationConstraintModel {
+    func lessThanOrEqualTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
         assert(ms.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]

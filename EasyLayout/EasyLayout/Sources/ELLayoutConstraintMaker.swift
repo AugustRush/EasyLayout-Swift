@@ -78,6 +78,22 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return ELLayoutCombinationConstraintModel(ms: width,height)
     }
     
+    var ELCenter: ELLayoutCombinationConstraintModel {
+        let centerX = constraintModel(.CenterX)
+        let centerY = constraintModel(.CenterY)
+        return ELLayoutCombinationConstraintModel(ms: centerX,centerY)
+    }
+    
+    var ELAllEdges: ELLayoutCombinationConstraintModel {
+        let top = constraintModel(.Top)
+        let left = constraintModel(.Left)
+        let bottom = constraintModel(.Bottom)
+        let right = constraintModel(.Right)
+        return ELLayoutCombinationConstraintModel(ms: top,left,bottom,right)
+    }
+    
+    
+    
     
     @available(iOS 8.0, *)
     var ELFirstBaseline : ELLayoutConstraintModel {

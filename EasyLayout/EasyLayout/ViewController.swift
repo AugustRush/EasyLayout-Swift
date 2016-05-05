@@ -20,9 +20,19 @@ class ViewController: UIViewController {
 //        layoutStyle1()
         
         firstView.makeConstraints { (make) in
-            make.ELSize.equalTo(100,200)
-            make.ELLeft == 10
-            make.ELTop == 10
+            make.ELAllEdges.equalTo(0,0,0,0)
+        }
+        
+        secondView.makeConstraints { (make) in
+            make.ELAllEdges.equalTo(40,40,-40,-40)
+        }
+        
+        thirdView.makeConstraints { (make) in
+            make.ELAllEdges.equalTo(80,80,-80,-80)
+        }
+        
+        fouthView.makeConstraints { (make) in
+            make.ELAllEdges.equalTo(120,120,-120,-120)
         }
     }
 

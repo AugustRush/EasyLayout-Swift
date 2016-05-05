@@ -23,6 +23,8 @@ protocol ELLayoutAttributeProtocol {
     var ELBaseline : ELLayoutConstraintModel { get }
     var ELLastBaseline : ELLayoutConstraintModel { get }
     var ELSize : ELLayoutCombinationConstraintModel { get }
+    var ELCenter : ELLayoutCombinationConstraintModel { get }
+    var ELAllEdges : ELLayoutCombinationConstraintModel { get }
     
     //
     @available(iOS 8.0, *)

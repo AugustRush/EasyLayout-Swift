@@ -59,6 +59,14 @@ class ELLayoutCombinationConstraintModel {
         return self
     }
     
+    func mutipliers(m : CGFloat) -> ELLayoutCombinationConstraintModel {
+        for index in 0..<models.count {
+            let model = models[index]
+            model.mutiplier(m)
+        }
+        return self
+    }
+    
     func prioritys(ps : UILayoutPriority...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
@@ -68,11 +76,27 @@ class ELLayoutCombinationConstraintModel {
         return self
     }
     
+    func prioritys(p : UILayoutPriority) -> ELLayoutCombinationConstraintModel {
+        for index in 0..<models.count {
+            let model = models[index]
+            model.priority(p)
+        }
+        return self
+    }
+    
     func constants(cs : CGFloat...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let constant = index < cs.count ? cs[index] : cs[0]
             model.constant(constant)
+        }
+        return self
+    }
+    
+    func constants(c : CGFloat) -> ELLayoutCombinationConstraintModel {
+        for index in 0..<models.count {
+            let model = models[index]
+            model.constant(c)
         }
         return self
     }

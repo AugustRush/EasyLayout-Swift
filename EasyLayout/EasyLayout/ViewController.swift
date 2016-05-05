@@ -17,52 +17,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        layoutStyle1()
-        
-        firstView.makeConstraints { (make) in
-            make.ELAllEdges.equalTo(0)
-        }
-        
-        secondView.makeConstraints { (make) in
-            make.ELAllEdges.equalTo(40,40,-40,-40)
-        }
-        
-        thirdView.makeConstraints { (make) in
-            make.ELAllEdges.equalTo(80,80,-80,-80)
-        }
-        
-        fouthView.makeConstraints { (make) in
-            make.ELAllEdges.equalTo(120,120,-120,-120)
-        }
+        layoutStyle1()
     }
 
     //MARK: layout methods
     func layoutStyle1() {
         firstView.remakeConstraints { (make) in
-            make.ELLeft == 10.0
-            make.ELTop == 10
-            make.ELBottom == -10
-            make.ELRight == -10
+            make.ELAllEdges.equalTo(0)
         }
         
         secondView.remakeConstraints { (make) in
-            make.ELLeft == 40
-            make.ELTop == 40
-            make.ELBottom == -40
-            make.ELRight == -40
+            make.ELAllEdges.equalTo(40,40,-40,-40)
         }
         
         thirdView.remakeConstraints { (make) in
-            make.ELLeft == 70
-            make.ELTop == 70
-            make.ELBottom == -70
-            make.ELRight == -70
+            make.ELAllEdges.equalTo(80,80,-80,-80)
         }
+        
         fouthView.remakeConstraints { (make) in
-            make.ELLeft == 100
-            make.ELTop == 100
-            make.ELBottom == -100
-            make.ELRight == -100
+            make.ELAllEdges.equalTo(120,120,-120,-120)
         }
     }
     
@@ -70,37 +43,32 @@ class ViewController: UIViewController {
         firstView.remakeConstraints { (make) in
             make.ELLeft == 10
             make.ELTop == 10
-            make.ELWidth == self.view.ELWidth / 2 - 30
-            make.ELHeight == self.view.ELHeight / 3 - 30
+            make.ELSize.equalTo(self.view).mutipliers(0.5).constants(-30)
         }
         
         secondView.remakeConstraints { (make) in
             make.ELTop == 10
             make.ELRight == -10
-            make.ELWidth == self.firstView
-            make.ELHeight == self.firstView
+            make.ELSize.equalTo(self.firstView)
         }
         
         thirdView.remakeConstraints { (make) in
             make.ELTop == self.firstView.ELBottom + 10
             make.ELLeft == 10
-            make.ELWidth == self.firstView
-            make.ELHeight == self.firstView
+            make.ELSize.equalTo(self.firstView)
         }
         
         fouthView.remakeConstraints { (make) in
             make.ELTop == self.secondView.ELBottom + 10
             make.ELRight == -10
-            make.ELWidth == self.firstView
-            make.ELHeight == self.firstView
+            make.ELSize.equalTo(self.firstView)
         }
 
     }
     
     func layoutStyle3() {
         firstView.updateConstraints { (make) in
-            make.ELWidth == self.view.ELWidth / 1 - 20
-            make.ELHeight == self.view.ELHeight / 1 - 20
+           make.ELSize.equalTo(self.view).constants(-20)
         }
     }
     

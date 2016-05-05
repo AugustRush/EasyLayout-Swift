@@ -63,7 +63,6 @@ class ViewController: UIViewController {
             make.ELRight == -10
             make.ELSize.equalTo(self.firstView)
         }
-
     }
     
     func layoutStyle3() {

@@ -8,35 +8,58 @@
 <img src="https://github.com/AugustRush/EasyLayout-Swift/blob/master/demo.gif" width="320">
 
 ## How to use
-```
-firstView.makeConstraints {
-   $0.ELLeft == 10
-   $0.ELTop == 10
-   $0.ELWidth == self.view.ELWidth / 2 - 30
-   $0.ELHeight == self.view.ELHeight / 3 - 30
- }
-```
-OR:
+<img src="https://github.com/AugustRush/EasyLayout-Swift/blob/master/Simulator%20Screen%20Shot%20May%205%2C%202016%2C%202.58.19%20PM.png" width="320">
 
+##### Code
 ```
-view.makeConstraints { (make) in
-   make.ELLeft == 10
-   make.ELTop == 10
-   make.ELWidth == self.view.ELWidth / 2 - 30
-   make.ELHeight == self.view.ELHeight / 3 - 30
+firstView.remakeConstraints { (make) in
+	make.ELAllEdges.equalTo(0)
 }
-```
-OR:
+        
+secondView.remakeConstraints { (make) in
+	make.ELAllEdges.equalTo(40,40,-40,-40)
+}
+        
+thirdView.remakeConstraints { (make) in
+   	make.ELAllEdges.equalTo(80,80,-80,-80)
+}
+        
+fouthView.remakeConstraints { (make) in
+	make.ELAllEdges.equalTo(120,120,-120,-120)
+}
 
 ```
-view.makeConstraints { (make) in
-   	make.ELLeft.equalTo(10)
-   	make.ELTop.equalTo(10)
-	make.ELWidth.equalTo(self.view).mutiplier(0.5).constant(-30)
-   	make.ELHeight.equalTo(self.view).mutiplier(0.5).constant(-30)
- }
+<img src="https://github.com/AugustRush/EasyLayout-Swift/blob/master/Simulator%20Screen%20Shot%20May%205%2C%202016%2C%202.59.52%20PM.png" width="320">
+
+##### Code
+```
+firstView.remakeConstraints { (make) in
+	make.ELLeft == 10
+	make.ELTop == 10
+	make.ELSize.equalTo(self.view).mutipliers(0.5).constants(-30)
+}
+        
+secondView.remakeConstraints { (make) in
+	make.ELTop == 10
+	make.ELRight == -10
+	make.ELSize.equalTo(self.firstView)
+}
+        
+thirdView.remakeConstraints { (make) 
+	make.ELTop == self.firstView.ELBottom + 10
+	make.ELLeft == 10
+	make.ELSize.equalTo(self.firstView)
+}
+        
+fouthView.remakeConstraints { (make) in
+	make.ELTop == self.secondView.ELBottom + 10
+	make.ELRight == -10
+	make.ELSize.equalTo(self.firstView)
+}
 
 ```
+
+
 ## Next to do
 ##### add combination attributes method
 ##### More Easier?(how to do???)

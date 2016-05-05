@@ -59,7 +59,7 @@ public class ELLayoutConstraintModel {
     }
     
     func mutiplier(m : CGFloat) -> ELLayoutConstraintModel {
-        mutiplier = m
+        mutiplier = mutiplier * m
         return self
     }
     
@@ -69,7 +69,7 @@ public class ELLayoutConstraintModel {
     }
     
     func constant(c : CGFloat) -> ELLayoutConstraintModel {
-        constant = c
+        constant = constant + c
         return self
     }
 

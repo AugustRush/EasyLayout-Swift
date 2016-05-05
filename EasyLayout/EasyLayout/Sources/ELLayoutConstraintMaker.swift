@@ -72,6 +72,13 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return constraintModel(.LastBaseline)
     }
     
+    var ELSize: ELLayoutCombinationConstraintModel {
+        let width = constraintModel(.Width)
+        let height = constraintModel(.Height)
+        return ELLayoutCombinationConstraintModel(ms: width,height)
+    }
+    
+    
     @available(iOS 8.0, *)
     var ELFirstBaseline : ELLayoutConstraintModel {
         return constraintModel(.FirstBaseline)
@@ -104,6 +111,7 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     var ELCenterYWithMargins : ELLayoutConstraintModel {
         return constraintModel(.CenterYWithinMargins)
     }
+    
     //MARK: public methods
     func install() {
         for model in tmpModels {

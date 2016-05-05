@@ -47,7 +47,6 @@ extension View : ELModelEquatableType {
     }
 }
 
-
 private func configurationModel(m : ELLayoutConstraintModel , constant : CGFloat) {
     if m.attribute != NSLayoutAttribute.Width
         && m.attribute != NSLayoutAttribute.Height {

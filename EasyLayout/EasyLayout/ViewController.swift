@@ -17,7 +17,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        layoutStyle1()
+//        layoutStyle1()
+        
+        firstView.makeConstraints { (make) in
+            make.ELSize.equalTo(100,200)
+            make.ELLeft == 10
+            make.ELTop == 10
+        }
     }
 
     //MARK: layout methods

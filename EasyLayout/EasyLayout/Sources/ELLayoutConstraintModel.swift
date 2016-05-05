@@ -13,14 +13,14 @@ import AppKit
 #endif
 
 public class ELLayoutConstraintModel {
-    weak var view : View!
-    weak var toView : View!
-    private var relation : NSLayoutRelation = .Equal
-    var attribute : NSLayoutAttribute!
-    var toAttribute : NSLayoutAttribute!
-    private var priority : UILayoutPriority = UILayoutPriorityDefaultHigh
-    var mutiplier : CGFloat = 1.0
-    var constant : CGFloat = 0.0
+    internal weak var view : View!
+    internal weak var toView : View!
+    internal var relation : NSLayoutRelation = .Equal
+    internal var attribute : NSLayoutAttribute!
+    internal var toAttribute : NSLayoutAttribute!
+    internal var priority : UILayoutPriority = UILayoutPriorityDefaultHigh
+    internal var mutiplier : CGFloat = 1.0
+    internal var constant : CGFloat = 0.0
     private weak var realConstraint : NSLayoutConstraint?
     //This method must be call when all properties has been set value
     lazy var identifier : String = {

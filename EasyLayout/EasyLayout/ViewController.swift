@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 //        layoutStyle1()
         
         firstView.makeConstraints { (make) in
-            make.ELAllEdges.equalTo(0,0,0,0)
+            make.ELAllEdges.equalTo(0)
         }
         
         secondView.makeConstraints { (make) in

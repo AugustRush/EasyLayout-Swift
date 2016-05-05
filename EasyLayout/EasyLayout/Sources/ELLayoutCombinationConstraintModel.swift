@@ -13,66 +13,79 @@ import AppKit
 #endif
 
 class ELLayoutCombinationConstraintModel {
-    var models : [ELLayoutConstraintModel] = Array()
+    private var models : [ELLayoutConstraintModel] = Array()
+    private var modelsDict : [NSLayoutAttribute : WeakContainer<ELLayoutConstraintModel>] = Dictionary()
     
     init(ms : ELLayoutConstraintModel...) {
         for m in ms {
             models.append(m)
+            modelsDict[m.attribute] = WeakContainer(v : m)
         }
     }
     
     func equalTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
-        assert(ms.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.equalTo(ms[index])
+            let equatable = index < ms.count ? ms[index] : ms[0]
+            model.equalTo(equatable)
         }
         return self
     }    
     
     func greaterThanOrEqualTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
-        assert(ms.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.equalTo(ms[index])
+            let equatable = index < ms.count ? ms[index] : ms[0]
+            model.equalTo(equatable)
         }
         return self
     }
     
     func lessThanOrEqualTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
-        assert(ms.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.equalTo(ms[index])
+            let equatable = index < ms.count ? ms[index] : ms[0]
+            model.equalTo(equatable)
         }
         return self
     }
     
     func mutipliers(ms : CGFloat...) -> ELLayoutCombinationConstraintModel {
-        assert(ms.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.mutiplier(ms[index])
+            let mutiplier = index < ms.count ? ms[index] : ms[0]
+            model.mutiplier(mutiplier)
         }
         return self
     }
     
     func prioritys(ps : UILayoutPriority...) -> ELLayoutCombinationConstraintModel {
-        assert(ps.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.priority(ps[index])
+            let priority = index < ps.count ? ps[index] : ps[0]
+            model.priority(priority)
         }
         return self
     }
     
     func constants(cs : CGFloat...) -> ELLayoutCombinationConstraintModel {
-        assert(cs.count == models.count, "passed [ELModelEquatableType] count should be equal to your attributes count")
         for index in 0..<models.count {
             let model = models[index]
-            model.constant(cs[index])
+            let constant = index < cs.count ? cs[index] : cs[0]
+            model.constant(constant)
         }
         return self
     }
+    
+    func constraint(attribute : NSLayoutAttribute) -> NSLayoutConstraint? {
+        let model = modelsDict[attribute]?.value as ELLayoutConstraintModel?
+        return model?.constraint()
+    }
+}
 
+private class WeakContainer<T : AnyObject> {
+    weak var value : T?
+    init(v : T) {
+        value = v
+    }
 }

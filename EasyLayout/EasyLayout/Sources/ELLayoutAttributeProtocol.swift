@@ -25,6 +25,7 @@ protocol ELLayoutAttributeProtocol {
     var ELSize : ELLayoutCombinationConstraintModel { get }
     var ELCenter : ELLayoutCombinationConstraintModel { get }
     var ELAllEdges : ELLayoutCombinationConstraintModel { get }
+    func ELCombination(attrs : NSLayoutAttribute...) -> ELLayoutCombinationConstraintModel;
     
     //
     @available(iOS 8.0, *)

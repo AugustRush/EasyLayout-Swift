@@ -23,6 +23,13 @@ class ELLayoutCombinationConstraintModel {
         }
     }
     
+    init(ms : [ELLayoutConstraintModel]) {
+        for m in ms {
+            models.append(m)
+            modelsDict[m.attribute] = WeakContainer(v : m)
+        }
+    }
+    
     func equalTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]

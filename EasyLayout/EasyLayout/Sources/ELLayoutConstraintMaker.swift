@@ -92,7 +92,14 @@ class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return ELLayoutCombinationConstraintModel(ms: top,left,bottom,right)
     }
     
-    
+    func ELCombination(attrs: NSLayoutAttribute...) -> ELLayoutCombinationConstraintModel {
+        var models : [ELLayoutConstraintModel] = Array()
+        for attr in attrs {
+            let m = constraintModel(attr)
+            models.append(m)
+        }
+        return ELLayoutCombinationConstraintModel(ms: models)
+    }
     
     
     @available(iOS 8.0, *)

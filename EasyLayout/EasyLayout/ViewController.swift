@@ -41,8 +41,8 @@ class ViewController: UIViewController {
     
     func layoutStyle2() {
         firstView.remakeConstraints { (make) in
-            make.ELLeft == 10
-            make.ELTop == 10
+            make.ELCombination(.Left,.Top)
+                .equalTo(10,10)
             make.ELSize.equalTo(self.view).mutipliers(0.5).constants(-30)
         }
         

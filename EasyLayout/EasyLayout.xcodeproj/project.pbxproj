@@ -41,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9706A4711CDC386C009EA533 /* ELPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ELPlayground.playground; sourceTree = "<group>"; };
+		9706A4721CDC3D25009EA533 /* EasyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLayout.h; sourceTree = "<group>"; };
 		9746B29C1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutCombinationConstraintModel.swift; sourceTree = "<group>"; };
 		97C1E0A51CD237BF001E95D9 /* EasyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				97F494B11CD8952800DC7CCE /* Sources */,
 				97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */,
 				97C1E0AA1CD237BF001E95D9 /* ViewController.swift */,
+				9706A4711CDC386C009EA533 /* ELPlayground.playground */,
 				97C1E0AC1CD237BF001E95D9 /* Main.storyboard */,
 				97C1E0AF1CD237BF001E95D9 /* Assets.xcassets */,
 				97C1E0B11CD237BF001E95D9 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 		97F494B11CD8952800DC7CCE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9706A4721CDC3D25009EA533 /* EasyLayout.h */,
 				97F494B81CD8952800DC7CCE /* UIView(EasyLayout).swift */,
 				97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */,
 				97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */,

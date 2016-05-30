@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        layoutStyle1()
+        layoutStyle1()        
+        
     }
 
     //MARK: layout methods

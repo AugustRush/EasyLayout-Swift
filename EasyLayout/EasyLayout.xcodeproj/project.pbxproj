@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9746B29D1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746B29C1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift */; };
+		977FDF101CFC5F0C009248FD /* ELConstraintModelSequenceTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF071CFC5F0C009248FD /* ELConstraintModelSequenceTypeExtension.swift */; };
+		977FDF111CFC5F0C009248FD /* ELLayoutAttributeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF081CFC5F0C009248FD /* ELLayoutAttributeProtocol.swift */; };
+		977FDF121CFC5F0C009248FD /* ELLayoutCombinationConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF091CFC5F0C009248FD /* ELLayoutCombinationConstraintModel.swift */; };
+		977FDF131CFC5F0C009248FD /* ELLayoutConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0A1CFC5F0C009248FD /* ELLayoutConstraintMaker.swift */; };
+		977FDF141CFC5F0C009248FD /* ELLayoutConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0B1CFC5F0C009248FD /* ELLayoutConstraintModel.swift */; };
+		977FDF151CFC5F0C009248FD /* ELModelArrayEquatableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0C1CFC5F0C009248FD /* ELModelArrayEquatableType.swift */; };
+		977FDF161CFC5F0C009248FD /* ELModelEquatableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0D1CFC5F0C009248FD /* ELModelEquatableType.swift */; };
+		977FDF171CFC5F0C009248FD /* ELOperatorsOverloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0E1CFC5F0C009248FD /* ELOperatorsOverloading.swift */; };
+		977FDF181CFC5F0C009248FD /* UIView(EasyLayout).swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FDF0F1CFC5F0C009248FD /* UIView(EasyLayout).swift */; };
 		97C1E0A91CD237BF001E95D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */; };
 		97C1E0AB1CD237BF001E95D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0AA1CD237BF001E95D9 /* ViewController.swift */; };
 		97C1E0AE1CD237BF001E95D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C1E0AC1CD237BF001E95D9 /* Main.storyboard */; };
@@ -15,12 +23,6 @@
 		97C1E0B31CD237BF001E95D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C1E0B11CD237BF001E95D9 /* LaunchScreen.storyboard */; };
 		97C1E0BE1CD237C0001E95D9 /* EasyLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0BD1CD237C0001E95D9 /* EasyLayoutTests.swift */; };
 		97C1E0C91CD237C0001E95D9 /* EasyLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1E0C81CD237C0001E95D9 /* EasyLayoutUITests.swift */; };
-		97F494B91CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */; };
-		97F494BB1CD8952800DC7CCE /* ELLayoutConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */; };
-		97F494BC1CD8952800DC7CCE /* ELLayoutConstraintModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */; };
-		97F494BD1CD8952800DC7CCE /* ELModelEquatableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */; };
-		97F494BE1CD8952800DC7CCE /* ELOperatorsOverloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B71CD8952800DC7CCE /* ELOperatorsOverloading.swift */; };
-		97F494BF1CD8952800DC7CCE /* UIView(EasyLayout).swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F494B81CD8952800DC7CCE /* UIView(EasyLayout).swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,16 @@
 
 /* Begin PBXFileReference section */
 		9706A4711CDC386C009EA533 /* ELPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ELPlayground.playground; sourceTree = "<group>"; };
-		9706A4721CDC3D25009EA533 /* EasyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLayout.h; sourceTree = "<group>"; };
-		9746B29C1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutCombinationConstraintModel.swift; sourceTree = "<group>"; };
+		977FDF061CFC5F0C009248FD /* EasyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLayout.h; sourceTree = "<group>"; };
+		977FDF071CFC5F0C009248FD /* ELConstraintModelSequenceTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELConstraintModelSequenceTypeExtension.swift; sourceTree = "<group>"; };
+		977FDF081CFC5F0C009248FD /* ELLayoutAttributeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutAttributeProtocol.swift; sourceTree = "<group>"; };
+		977FDF091CFC5F0C009248FD /* ELLayoutCombinationConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutCombinationConstraintModel.swift; sourceTree = "<group>"; };
+		977FDF0A1CFC5F0C009248FD /* ELLayoutConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintMaker.swift; sourceTree = "<group>"; };
+		977FDF0B1CFC5F0C009248FD /* ELLayoutConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintModel.swift; sourceTree = "<group>"; };
+		977FDF0C1CFC5F0C009248FD /* ELModelArrayEquatableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELModelArrayEquatableType.swift; sourceTree = "<group>"; };
+		977FDF0D1CFC5F0C009248FD /* ELModelEquatableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELModelEquatableType.swift; sourceTree = "<group>"; };
+		977FDF0E1CFC5F0C009248FD /* ELOperatorsOverloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELOperatorsOverloading.swift; sourceTree = "<group>"; };
+		977FDF0F1CFC5F0C009248FD /* UIView(EasyLayout).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView(EasyLayout).swift"; sourceTree = "<group>"; };
 		97C1E0A51CD237BF001E95D9 /* EasyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97C1E0AA1CD237BF001E95D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +67,6 @@
 		97C1E0C41CD237C0001E95D9 /* EasyLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C1E0C81CD237C0001E95D9 /* EasyLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLayoutUITests.swift; sourceTree = "<group>"; };
 		97C1E0CA1CD237C0001E95D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutAttributeProtocol.swift; sourceTree = "<group>"; };
-		97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintMaker.swift; sourceTree = "<group>"; };
-		97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLayoutConstraintModel.swift; sourceTree = "<group>"; };
-		97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELModelEquatableType.swift; sourceTree = "<group>"; };
-		97F494B71CD8952800DC7CCE /* ELOperatorsOverloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELOperatorsOverloading.swift; sourceTree = "<group>"; };
-		97F494B81CD8952800DC7CCE /* UIView(EasyLayout).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView(EasyLayout).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		977FDF051CFC5F0C009248FD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				977FDF061CFC5F0C009248FD /* EasyLayout.h */,
+				977FDF071CFC5F0C009248FD /* ELConstraintModelSequenceTypeExtension.swift */,
+				977FDF081CFC5F0C009248FD /* ELLayoutAttributeProtocol.swift */,
+				977FDF091CFC5F0C009248FD /* ELLayoutCombinationConstraintModel.swift */,
+				977FDF0A1CFC5F0C009248FD /* ELLayoutConstraintMaker.swift */,
+				977FDF0B1CFC5F0C009248FD /* ELLayoutConstraintModel.swift */,
+				977FDF0C1CFC5F0C009248FD /* ELModelArrayEquatableType.swift */,
+				977FDF0D1CFC5F0C009248FD /* ELModelEquatableType.swift */,
+				977FDF0E1CFC5F0C009248FD /* ELOperatorsOverloading.swift */,
+				977FDF0F1CFC5F0C009248FD /* UIView(EasyLayout).swift */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = "<group>";
+		};
 		97C1E09C1CD237BF001E95D9 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +135,7 @@
 		97C1E0A71CD237BF001E95D9 /* EasyLayout */ = {
 			isa = PBXGroup;
 			children = (
-				97F494B11CD8952800DC7CCE /* Sources */,
+				977FDF051CFC5F0C009248FD /* Sources */,
 				97C1E0A81CD237BF001E95D9 /* AppDelegate.swift */,
 				97C1E0AA1CD237BF001E95D9 /* ViewController.swift */,
 				9706A4711CDC386C009EA533 /* ELPlayground.playground */,
@@ -141,21 +163,6 @@
 				97C1E0CA1CD237C0001E95D9 /* Info.plist */,
 			);
 			path = EasyLayoutUITests;
-			sourceTree = "<group>";
-		};
-		97F494B11CD8952800DC7CCE /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				9706A4721CDC3D25009EA533 /* EasyLayout.h */,
-				97F494B81CD8952800DC7CCE /* UIView(EasyLayout).swift */,
-				97F494B21CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift */,
-				97F494B41CD8952800DC7CCE /* ELLayoutConstraintMaker.swift */,
-				97F494B51CD8952800DC7CCE /* ELLayoutConstraintModel.swift */,
-				97F494B61CD8952800DC7CCE /* ELModelEquatableType.swift */,
-				9746B29C1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift */,
-				97F494B71CD8952800DC7CCE /* ELOperatorsOverloading.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,15 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F494BD1CD8952800DC7CCE /* ELModelEquatableType.swift in Sources */,
-				97F494BE1CD8952800DC7CCE /* ELOperatorsOverloading.swift in Sources */,
-				97F494BF1CD8952800DC7CCE /* UIView(EasyLayout).swift in Sources */,
-				97F494B91CD8952800DC7CCE /* ELLayoutAttributeProtocol.swift in Sources */,
-				9746B29D1CDAF00E00B62A5E /* ELLayoutCombinationConstraintModel.swift in Sources */,
+				977FDF131CFC5F0C009248FD /* ELLayoutConstraintMaker.swift in Sources */,
+				977FDF151CFC5F0C009248FD /* ELModelArrayEquatableType.swift in Sources */,
 				97C1E0AB1CD237BF001E95D9 /* ViewController.swift in Sources */,
-				97F494BB1CD8952800DC7CCE /* ELLayoutConstraintMaker.swift in Sources */,
+				977FDF101CFC5F0C009248FD /* ELConstraintModelSequenceTypeExtension.swift in Sources */,
+				977FDF181CFC5F0C009248FD /* UIView(EasyLayout).swift in Sources */,
 				97C1E0A91CD237BF001E95D9 /* AppDelegate.swift in Sources */,
-				97F494BC1CD8952800DC7CCE /* ELLayoutConstraintModel.swift in Sources */,
+				977FDF171CFC5F0C009248FD /* ELOperatorsOverloading.swift in Sources */,
+				977FDF111CFC5F0C009248FD /* ELLayoutAttributeProtocol.swift in Sources */,
+				977FDF141CFC5F0C009248FD /* ELLayoutConstraintModel.swift in Sources */,
+				977FDF161CFC5F0C009248FD /* ELModelEquatableType.swift in Sources */,
+				977FDF121CFC5F0C009248FD /* ELLayoutCombinationConstraintModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

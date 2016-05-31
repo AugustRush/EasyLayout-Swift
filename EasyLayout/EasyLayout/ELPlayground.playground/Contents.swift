@@ -20,18 +20,18 @@ container.addSubview(view3)
 
 view1.makeConstraints { (make) in
     make.ELLeft == 20
-    make.ELSize.equalTo(200,200)
+    make.ELSize.equalTo(300,300)
     make.ELTop == 20
 }
 
 view2.makeConstraints { (make) in
-    make.ELLeft == view1.ELRight + 10
+    make.ELLeft == view1.ELRight + 20
     make.ELTop == view1.ELTop
     make.ELSize.equalTo(200,300)
 }
 
 view3.makeConstraints { (make) in
-    make.ELLeft == view2.ELRight + 10
+    make.ELLeft == view2.ELRight + 20
     make.ELTop == view1
     make.ELSize.equalTo(100,300)
 }

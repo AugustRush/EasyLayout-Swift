@@ -1,0 +1,173 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ELModelArrayEquatableType"
+provides-nominal:
+- "P10EasyLayout25ELModelArrayEquatableType"
+- "CSo6NSView"
+provides-member:
+- ["P10EasyLayout25ELModelArrayEquatableType", ""]
+- ["CSo6NSView", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "NSLayoutRelation"
+- "ELModelArrayEquatableType"
+- "ELLayoutConstraintModel"
+- "_ArrayType"
+- "View"
+depends-member:
+- !private ["Ps9AnyObject", "attribute"]
+- !private ["Ps9AnyObject", "relation"]
+- ["Ps9AnyObject", "supplementModels"]
+- !private ["Ps9AnyObject", "toAttribute"]
+- !private ["Ps9AnyObject", "toView"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Iterator"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- ["Ps7CVarArg", "supplementModels"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "supplementModels"]
+- ["Ps29CustomPlaygroundQuickLookable", "supplementModels"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "supplementModels"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "supplementModels"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "attribute"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "relation"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "toAttribute"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "toView"]
+- ["P10EasyLayout25ELModelArrayEquatableType", "ELLayoutConstraintModel"]
+- ["P10EasyLayout25ELModelArrayEquatableType", "NSLayoutRelation"]
+- ["P10EasyLayout25ELModelArrayEquatableType", "supplementModels"]
+- ["P10EasyLayout25ELModelArrayEquatableType", ""]
+- !private ["P10EasyLayout20ELModelEquatableType", "attribute"]
+- !private ["P10EasyLayout20ELModelEquatableType", "relation"]
+- ["P10EasyLayout20ELModelEquatableType", "supplementModels"]
+- !private ["P10EasyLayout20ELModelEquatableType", "toAttribute"]
+- !private ["P10EasyLayout20ELModelEquatableType", "toView"]
+- ["Ps9Equatable", "supplementModels"]
+- ["Ps8Hashable", "supplementModels"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- ["PSo15NSAccessibility", "supplementModels"]
+- ["PSo30NSAccessibilityElementProtocol", "supplementModels"]
+- ["PSo29NSAnimatablePropertyContainer", "supplementModels"]
+- ["PSo25NSAppearanceCustomization", "supplementModels"]
+- ["PSo8NSCoding", "supplementModels"]
+- ["PSo21NSDraggingDestination", "supplementModels"]
+- ["CSo8NSObject", "ELLayoutConstraintModel"]
+- ["CSo8NSObject", "NSLayoutRelation"]
+- ["CSo8NSObject", "supplementModels"]
+- ["PSo16NSObjectProtocol", "supplementModels"]
+- ["CSo11NSResponder", "ELLayoutConstraintModel"]
+- ["CSo11NSResponder", "NSLayoutRelation"]
+- ["CSo11NSResponder", "supplementModels"]
+- ["PSo33NSUserInterfaceItemIdentification", "supplementModels"]
+- ["CSo6NSView", "ELLayoutConstraintModel"]
+- ["CSo6NSView", "NSLayoutRelation"]
+- ["CSo6NSView", "deinit"]
+- ["CSo6NSView", "supplementModels"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "P10EasyLayout25ELLayoutAttributeProtocol"
+- !private "C10EasyLayout23ELLayoutConstraintModel"
+- "P10EasyLayout25ELModelArrayEquatableType"
+- "P10EasyLayout20ELModelEquatableType"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "PSo15NSAccessibility"
+- "PSo30NSAccessibilityElementProtocol"
+- "PSo29NSAnimatablePropertyContainer"
+- "PSo25NSAppearanceCustomization"
+- "PSo8NSCoding"
+- "PSo21NSDraggingDestination"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSResponder"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo6NSView"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "cd9dbf915c0247a0a281e645ad860fe9"

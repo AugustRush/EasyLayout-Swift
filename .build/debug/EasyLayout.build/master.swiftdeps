@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0-dev (LLVM dffa09ffd8, Clang 1e6cba3ce3, Swift d2aee43220)"
+options: "8a0e08070b8e8f3d36b3adb7587c6414"
+build_time: [517924073, 472950000]
+inputs:
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELConstraintModelSequenceTypeExtension.swift": !dirty [517892498, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutAttributeProtocol.swift": !dirty [517891320, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutCombinationConstraintModel.swift": !dirty [517892498, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintMaker.swift": !dirty [517892259, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintModel.swift": !dirty [517892530, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelArrayEquatableType.swift": !dirty [515595077, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelEquatableType.swift": !dirty [515732408, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELOperatorsOverloading.swift": !dirty [515745636, 0]
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/UIView(EasyLayout).swift": !dirty [517892218, 0]

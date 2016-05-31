@@ -1,0 +1,26 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": []
+  "main": ["<EasyLayout.module>"]
+default: "main"
+commands: 
+  "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build":
+    tool: mkdir
+    outputs: ["/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build"]
+
+  "<EasyLayout.module>":
+    tool: swift-compiler
+    executable: "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/bin/swiftc"
+    module-name: "EasyLayout"
+    module-output-path: "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.swiftmodule"
+    inputs: []
+    outputs: ["<EasyLayout.module>","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout).swift.o"]
+    import-paths: ["/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug"]
+    temps-path: "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build"
+    objects: ["/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading.swift.o","/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout).swift.o"]
+    other-args: ["-j8","-Onone","-g","-D","SWIFT_PACKAGE","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk"]
+    sources: ["/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELConstraintModelSequenceTypeExtension.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutAttributeProtocol.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutCombinationConstraintModel.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintMaker.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintModel.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelArrayEquatableType.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelEquatableType.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELOperatorsOverloading.swift","/Users/baidu/My Vendors/EasyLayout-Swift/Sources/UIView(EasyLayout).swift"]
+    is-library: true
+

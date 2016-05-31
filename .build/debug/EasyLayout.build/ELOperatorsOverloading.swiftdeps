@@ -1,0 +1,122 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "=="
+- ">="
+- "<="
+- "+"
+- "+"
+- "+"
+- "+"
+- "-"
+- "-"
+- "-"
+- "-"
+- "*"
+- "*"
+- "*"
+- "*"
+- "/"
+- "/"
+- "/"
+- "/"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "-"
+- ">="
+- "Double"
+- "<="
+- "*"
+- "ELModelEquatableType"
+- "Float"
+- "Int"
+- "+"
+- "/"
+- "CGFloat"
+- "ELLayoutConstraintModel"
+- "=="
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "constant"]
+- !private ["Ps9AnyObject", "equalTo"]
+- !private ["Ps9AnyObject", "greaterThanOrEqualTo"]
+- !private ["Ps9AnyObject", "lessThanOrEqualTo"]
+- !private ["Ps9AnyObject", "mutiplier"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "constant"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "deinit"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "equalTo"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "greaterThanOrEqualTo"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "lessThanOrEqualTo"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "mutiplier"]
+- !private ["P10EasyLayout20ELModelEquatableType", "constant"]
+- !private ["P10EasyLayout20ELModelEquatableType", "equalTo"]
+- !private ["P10EasyLayout20ELModelEquatableType", "greaterThanOrEqualTo"]
+- !private ["P10EasyLayout20ELModelEquatableType", "init"]
+- !private ["P10EasyLayout20ELModelEquatableType", "lessThanOrEqualTo"]
+- !private ["P10EasyLayout20ELModelEquatableType", "mutiplier"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "Ps9AnyObject"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "C10EasyLayout23ELLayoutConstraintModel"
+- !private "P10EasyLayout20ELModelEquatableType"
+- !private "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "6d8ed7e3d55c403a90414f5d9152488d"

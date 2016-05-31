@@ -1,0 +1,384 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ELLayoutConstraintMaker"
+provides-nominal:
+- "C10EasyLayout23ELLayoutConstraintMaker"
+provides-member:
+- ["C10EasyLayout23ELLayoutConstraintMaker", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ELLayoutCombinationConstraintModel"
+- "Array"
+- "View"
+- "Dictionary"
+- "String"
+- "NSLayoutAttribute"
+- "ELLayoutConstraintModel"
+- "ELLayoutConstraintMaker"
+- "ELLayoutAttributeProtocol"
+depends-member:
+- ["Ps9AnyObject", "Array"]
+- ["Ps9AnyObject", "Dictionary"]
+- ["Ps9AnyObject", "ELAllEdges"]
+- ["Ps9AnyObject", "ELBaseline"]
+- ["Ps9AnyObject", "ELBottom"]
+- ["Ps9AnyObject", "ELBottomMargin"]
+- ["Ps9AnyObject", "ELCenter"]
+- ["Ps9AnyObject", "ELCenterX"]
+- ["Ps9AnyObject", "ELCenterXWithMargins"]
+- ["Ps9AnyObject", "ELCenterY"]
+- ["Ps9AnyObject", "ELCenterYWithMargins"]
+- ["Ps9AnyObject", "ELFirstBaseline"]
+- ["Ps9AnyObject", "ELHeight"]
+- ["Ps9AnyObject", "ELLastBaseline"]
+- !private ["Ps9AnyObject", "ELLayoutCombinationConstraintModel"]
+- !private ["Ps9AnyObject", "ELLayoutConstraintModel"]
+- ["Ps9AnyObject", "ELLeading"]
+- ["Ps9AnyObject", "ELLeadingMargin"]
+- ["Ps9AnyObject", "ELLeft"]
+- ["Ps9AnyObject", "ELLeftMargin"]
+- ["Ps9AnyObject", "ELNone"]
+- ["Ps9AnyObject", "ELRight"]
+- ["Ps9AnyObject", "ELRightMargin"]
+- ["Ps9AnyObject", "ELSize"]
+- ["Ps9AnyObject", "ELTop"]
+- ["Ps9AnyObject", "ELTrailing"]
+- ["Ps9AnyObject", "ELTrailingMargin"]
+- ["Ps9AnyObject", "ELWidth"]
+- !private ["Ps9AnyObject", "active"]
+- !private ["Ps9AnyObject", "constant"]
+- !private ["Ps9AnyObject", "constraint"]
+- !private ["Ps9AnyObject", "constraintModel"]
+- !private ["Ps9AnyObject", "identifier"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "installConstraint"]
+- !private ["Ps9AnyObject", "installedModels"]
+- !private ["Ps9AnyObject", "isSameAs"]
+- !private ["Ps9AnyObject", "refereneView"]
+- !private ["Ps9AnyObject", "tmpModels"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "init"]
+- !private ["Sa", "removeAll"]
+- !private ["Ps23ArrayLiteralConvertible", "Iterator"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "removeAll"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "removeAll"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "removeAll"]
+- !private ["Ps7CVarArg", "active"]
+- !private ["Ps7CVarArg", "constant"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "removeAll"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Collection", "values"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "active"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "constant"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAll"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "values"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "append"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "removeAll"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "values"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "active"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "constant"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "removeAll"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "values"]
+- !private ["Vs10Dictionary", "Iterator"]
+- ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "removeAll"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs10Dictionary", "values"]
+- !private ["Ps28DictionaryLiteralConvertible", "Iterator"]
+- ["Ps28DictionaryLiteralConvertible", "init"]
+- !private ["Ps28DictionaryLiteralConvertible", "removeAll"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "values"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "Array"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "Dictionary"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELAllEdges"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBaseline"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBottom"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBottomMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenter"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterX"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterXWithMargins"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterY"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterYWithMargins"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELFirstBaseline"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELHeight"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLastBaseline"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLayoutCombinationConstraintModel"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLayoutConstraintModel"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeading"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeadingMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeft"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeftMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELNone"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELRight"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELRightMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELSize"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTop"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTrailing"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTrailingMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELWidth"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "constraintModel"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "installConstraint"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "installedModels"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "refereneView"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "tmpModels"]
+- !private ["C10EasyLayout34ELLayoutCombinationConstraintModel", "init"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "Array"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "Dictionary"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELAllEdges"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELBaseline"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELBottom"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELBottomMargin"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCenter"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCenterX"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCenterXWithMargins"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCenterY"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCenterYWithMargins"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELCombination"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELFirstBaseline"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELHeight"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLastBaseline"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLayoutCombinationConstraintModel"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLayoutConstraintModel"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLeading"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLeadingMargin"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLeft"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELLeftMargin"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELNone"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELRight"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELRightMargin"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELSize"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELTop"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELTrailing"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELTrailingMargin"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "ELWidth"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "NSLayoutAttribute"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "String"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "View"]
+- !private ["C10EasyLayout23ELLayoutConstraintMaker", "constraintModel"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "deinit"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "init"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "install"]
+- !private ["C10EasyLayout23ELLayoutConstraintMaker", "installConstraint"]
+- !private ["C10EasyLayout23ELLayoutConstraintMaker", "installedModels"]
+- !private ["C10EasyLayout23ELLayoutConstraintMaker", "refereneView"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "removeAll"]
+- !private ["C10EasyLayout23ELLayoutConstraintMaker", "tmpModels"]
+- ["C10EasyLayout23ELLayoutConstraintMaker", "updateExsit"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "constant"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "constraint"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "identifier"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "init"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "isSameAs"]
+- !private ["P10EasyLayout20ELModelEquatableType", "constant"]
+- !private ["P10EasyLayout20ELModelEquatableType", "constraint"]
+- !private ["P10EasyLayout20ELModelEquatableType", "identifier"]
+- !private ["P10EasyLayout20ELModelEquatableType", "init"]
+- !private ["P10EasyLayout20ELModelEquatableType", "isSameAs"]
+- !private ["Ps9Equatable", "active"]
+- !private ["Ps9Equatable", "constant"]
+- !private ["Ps8Hashable", "active"]
+- !private ["Ps8Hashable", "constant"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "removeAll"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps9Indexable", "values"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "removeAll"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Ps13IndexableBase", "values"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps22LazyCollectionProtocol", "Iterator"]
+- !private ["Vs17LazyMapCollection", "Iterator"]
+- !private ["Vs15LazyMapIterator", "Element"]
+- !private ["Ps20LazySequenceProtocol", "Iterator"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "removeAll"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "removeAll"]
+- !private ["PSo29NSAnimatablePropertyContainer", "active"]
+- !private ["PSo29NSAnimatablePropertyContainer", "constant"]
+- !private ["CSo18NSLayoutConstraint", "active"]
+- !private ["CSo18NSLayoutConstraint", "constant"]
+- !private ["CSo8NSObject", "active"]
+- !private ["CSo8NSObject", "constant"]
+- !private ["PSo16NSObjectProtocol", "active"]
+- !private ["PSo16NSObjectProtocol", "constant"]
+- ["Ps21NilLiteralConvertible", "some"]
+- ["Sq", "some"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "removeAll"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "removeAll"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "removeAll"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "removeAll"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "removeAll"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps8Sequence", "values"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "removeAll"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "removeAll"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAll"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "values"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23ArrayLiteralConvertible"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- !private "Ps7CVarArg"
+- "Ps10Collection"
+- "Ps28CustomDebugStringConvertible"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- "Ps28DictionaryLiteralConvertible"
+- "P10EasyLayout25ELLayoutAttributeProtocol"
+- !private "C10EasyLayout34ELLayoutCombinationConstraintModel"
+- "C10EasyLayout23ELLayoutConstraintMaker"
+- !private "C10EasyLayout23ELLayoutConstraintModel"
+- !private "P10EasyLayout20ELModelEquatableType"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps22LazyCollectionProtocol"
+- !private "Vs17LazyMapCollection"
+- !private "Vs15LazyMapIterator"
+- !private "Ps20LazySequenceProtocol"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- !private "PSo29NSAnimatablePropertyContainer"
+- !private "CSo18NSLayoutConstraint"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "Ps8Sequence"
+- !private "Vs5Slice"
+- "Ps14_ArrayProtocol"
+- "Ps24_DestructorSafeContainer"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "f16f84f812be76b764be02889690eef4"

@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/master.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELConstraintModelSequenceTypeExtension.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELConstraintModelSequenceTypeExtension.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutAttributeProtocol.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutAttributeProtocol.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutCombinationConstraintModel.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutCombinationConstraintModel.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintMaker.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintMaker.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELLayoutConstraintModel.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELLayoutConstraintModel.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelArrayEquatableType.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelArrayEquatableType.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELModelEquatableType.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELModelEquatableType.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/ELOperatorsOverloading.swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading.d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading.swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/ELOperatorsOverloading.swiftdeps"
+  },
+  "/Users/baidu/My Vendors/EasyLayout-Swift/Sources/UIView(EasyLayout).swift": {
+    "dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout).d",
+    "object": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout).swift.o",
+    "swiftmodule": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout)~partial.swiftmodule",
+    "swift-dependencies": "/Users/baidu/My Vendors/EasyLayout-Swift/.build/debug/EasyLayout.build/UIView(EasyLayout).swiftdeps"
+  }
+}

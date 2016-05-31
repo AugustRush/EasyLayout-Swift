@@ -1,0 +1,71 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ELLayoutAttributeProtocol"
+provides-nominal:
+- "P10EasyLayout25ELLayoutAttributeProtocol"
+provides-member:
+- ["P10EasyLayout25ELLayoutAttributeProtocol", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ELLayoutAttributeProtocol"
+- "ELLayoutConstraintModel"
+- "ELLayoutCombinationConstraintModel"
+- "NSLayoutAttribute"
+depends-member:
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELAllEdges"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBaseline"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBottom"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELBottomMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenter"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterX"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterXWithMargins"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterY"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELCenterYWithMargins"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELFirstBaseline"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELHeight"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLastBaseline"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLayoutCombinationConstraintModel"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLayoutConstraintModel"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeading"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeadingMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeft"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELLeftMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELNone"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELRight"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELRightMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELSize"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTop"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTrailing"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELTrailingMargin"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "ELWidth"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "NSLayoutAttribute"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", ""]
+depends-nominal:
+- "P10EasyLayout25ELLayoutAttributeProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "f8b97a2d5d1583dee9ced17faae55da1"

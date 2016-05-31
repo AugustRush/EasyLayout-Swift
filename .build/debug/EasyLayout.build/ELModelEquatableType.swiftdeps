@@ -1,0 +1,272 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ELModelEquatableType"
+provides-nominal:
+- "P10EasyLayout20ELModelEquatableType"
+- "C10EasyLayout23ELLayoutConstraintModel"
+- "Si"
+- "Sd"
+- "V12CoreGraphics7CGFloat"
+- "CSo6NSView"
+provides-member:
+- ["P10EasyLayout20ELModelEquatableType", ""]
+- ["C10EasyLayout23ELLayoutConstraintModel", ""]
+- ["Si", ""]
+- ["Sd", ""]
+- ["V12CoreGraphics7CGFloat", ""]
+- ["CSo6NSView", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ELModelEquatableType"
+- !private "configurationModel"
+- "Double"
+- !private "&&"
+- "View"
+- !private "!="
+- !private "NSLayoutAttribute"
+- "Int"
+- "CGFloat"
+- "ELLayoutConstraintModel"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "CGFloat"]
+- !private ["Ps16AbsoluteValuable", "configurationModel"]
+- ["Ps16AbsoluteValuable", "supplementModel"]
+- !private ["Ps9AnyObject", "attribute"]
+- !private ["Ps9AnyObject", "constant"]
+- !private ["Ps9AnyObject", "mutiplier"]
+- !private ["Ps9AnyObject", "superview"]
+- ["Ps9AnyObject", "supplementModel"]
+- !private ["Ps9AnyObject", "toAttribute"]
+- !private ["Ps9AnyObject", "toView"]
+- !private ["Ps9AnyObject", "view"]
+- !private ["Ps17BitwiseOperations", "CGFloat"]
+- !private ["Ps17BitwiseOperations", "configurationModel"]
+- ["Ps17BitwiseOperations", "supplementModel"]
+- ["V12CoreGraphics7CGFloat", "ELLayoutConstraintModel"]
+- !private ["V12CoreGraphics7CGFloat", "configurationModel"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["V12CoreGraphics7CGFloat", "supplementModel"]
+- !private ["Ps7CVarArg", "CGFloat"]
+- !private ["Ps7CVarArg", "configurationModel"]
+- !private ["Ps7CVarArg", "superview"]
+- ["Ps7CVarArg", "supplementModel"]
+- !private ["Ps10Comparable", "CGFloat"]
+- !private ["Ps10Comparable", "configurationModel"]
+- ["Ps10Comparable", "supplementModel"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "configurationModel"]
+- !private ["Ps28CustomDebugStringConvertible", "superview"]
+- ["Ps28CustomDebugStringConvertible", "supplementModel"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "CGFloat"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "configurationModel"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "superview"]
+- ["Ps29CustomPlaygroundQuickLookable", "supplementModel"]
+- !private ["Ps17CustomReflectable", "CGFloat"]
+- !private ["Ps17CustomReflectable", "configurationModel"]
+- ["Ps17CustomReflectable", "supplementModel"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "configurationModel"]
+- !private ["Ps23CustomStringConvertible", "superview"]
+- ["Ps23CustomStringConvertible", "supplementModel"]
+- !private ["Sd", "CGFloat"]
+- ["Sd", "ELLayoutConstraintModel"]
+- !private ["Sd", "configurationModel"]
+- ["Sd", "deinit"]
+- ["Sd", "supplementModel"]
+- !private ["P10EasyLayout25ELLayoutAttributeProtocol", "superview"]
+- ["P10EasyLayout25ELLayoutAttributeProtocol", "supplementModel"]
+- ["C10EasyLayout23ELLayoutConstraintModel", "ELLayoutConstraintModel"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "attribute"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "constant"]
+- ["C10EasyLayout23ELLayoutConstraintModel", "deinit"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "mutiplier"]
+- ["C10EasyLayout23ELLayoutConstraintModel", "supplementModel"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "toAttribute"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "toView"]
+- !private ["C10EasyLayout23ELLayoutConstraintModel", "view"]
+- !private ["P10EasyLayout25ELModelArrayEquatableType", "superview"]
+- ["P10EasyLayout25ELModelArrayEquatableType", "supplementModel"]
+- !private ["P10EasyLayout20ELModelEquatableType", "CGFloat"]
+- ["P10EasyLayout20ELModelEquatableType", "ELLayoutConstraintModel"]
+- !private ["P10EasyLayout20ELModelEquatableType", "attribute"]
+- !private ["P10EasyLayout20ELModelEquatableType", "configurationModel"]
+- !private ["P10EasyLayout20ELModelEquatableType", "constant"]
+- !private ["P10EasyLayout20ELModelEquatableType", "mutiplier"]
+- !private ["P10EasyLayout20ELModelEquatableType", "superview"]
+- ["P10EasyLayout20ELModelEquatableType", "supplementModel"]
+- !private ["P10EasyLayout20ELModelEquatableType", "toAttribute"]
+- !private ["P10EasyLayout20ELModelEquatableType", "toView"]
+- !private ["P10EasyLayout20ELModelEquatableType", "view"]
+- ["P10EasyLayout20ELModelEquatableType", ""]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "configurationModel"]
+- !private ["Ps9Equatable", "superview"]
+- ["Ps9Equatable", "supplementModel"]
+- !private ["Ps23FloatLiteralConvertible", "CGFloat"]
+- !private ["Ps23FloatLiteralConvertible", "configurationModel"]
+- ["Ps23FloatLiteralConvertible", "supplementModel"]
+- !private ["Ps13FloatingPoint", "CGFloat"]
+- !private ["Ps13FloatingPoint", "configurationModel"]
+- ["Ps13FloatingPoint", "supplementModel"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "configurationModel"]
+- !private ["Ps8Hashable", "superview"]
+- ["Ps8Hashable", "supplementModel"]
+- !private ["Si", "CGFloat"]
+- ["Si", "ELLayoutConstraintModel"]
+- !private ["Si", "configurationModel"]
+- ["Si", "deinit"]
+- ["Si", "supplementModel"]
+- !private ["Ps7Integer", "CGFloat"]
+- !private ["Ps7Integer", "configurationModel"]
+- ["Ps7Integer", "supplementModel"]
+- !private ["Ps17IntegerArithmetic", "CGFloat"]
+- !private ["Ps17IntegerArithmetic", "configurationModel"]
+- ["Ps17IntegerArithmetic", "supplementModel"]
+- !private ["Ps25IntegerLiteralConvertible", "CGFloat"]
+- !private ["Ps25IntegerLiteralConvertible", "configurationModel"]
+- ["Ps25IntegerLiteralConvertible", "supplementModel"]
+- !private ["Ps10MirrorPath", "CGFloat"]
+- !private ["Ps10MirrorPath", "configurationModel"]
+- ["Ps10MirrorPath", "supplementModel"]
+- !private ["PSo15NSAccessibility", "superview"]
+- ["PSo15NSAccessibility", "supplementModel"]
+- !private ["PSo30NSAccessibilityElementProtocol", "superview"]
+- ["PSo30NSAccessibilityElementProtocol", "supplementModel"]
+- !private ["PSo29NSAnimatablePropertyContainer", "superview"]
+- ["PSo29NSAnimatablePropertyContainer", "supplementModel"]
+- !private ["PSo25NSAppearanceCustomization", "superview"]
+- ["PSo25NSAppearanceCustomization", "supplementModel"]
+- !private ["PSo8NSCoding", "superview"]
+- ["PSo8NSCoding", "supplementModel"]
+- !private ["PSo21NSDraggingDestination", "superview"]
+- ["PSo21NSDraggingDestination", "supplementModel"]
+- ["CSo8NSObject", "ELLayoutConstraintModel"]
+- !private ["CSo8NSObject", "superview"]
+- ["CSo8NSObject", "supplementModel"]
+- !private ["PSo16NSObjectProtocol", "superview"]
+- ["PSo16NSObjectProtocol", "supplementModel"]
+- ["CSo11NSResponder", "ELLayoutConstraintModel"]
+- !private ["CSo11NSResponder", "superview"]
+- ["CSo11NSResponder", "supplementModel"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "superview"]
+- ["PSo33NSUserInterfaceItemIdentification", "supplementModel"]
+- ["CSo6NSView", "ELLayoutConstraintModel"]
+- ["CSo6NSView", "deinit"]
+- !private ["CSo6NSView", "superview"]
+- ["CSo6NSView", "supplementModel"]
+- !private ["Ps13SignedInteger", "CGFloat"]
+- !private ["Ps13SignedInteger", "configurationModel"]
+- ["Ps13SignedInteger", "supplementModel"]
+- !private ["Ps12SignedNumber", "CGFloat"]
+- !private ["Ps12SignedNumber", "configurationModel"]
+- ["Ps12SignedNumber", "supplementModel"]
+- !private ["Ps10Strideable", "CGFloat"]
+- !private ["Ps10Strideable", "configurationModel"]
+- ["Ps10Strideable", "supplementModel"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "CGFloat"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "configurationModel"]
+- ["Ps31_BuiltinFloatLiteralConvertible", "supplementModel"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "CGFloat"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "configurationModel"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "supplementModel"]
+- !private ["Ps15_CVarArgAligned", "CGFloat"]
+- !private ["Ps15_CVarArgAligned", "configurationModel"]
+- ["Ps15_CVarArgAligned", "supplementModel"]
+- !private ["Ps22_CVarArgPassedAsDouble", "CGFloat"]
+- !private ["Ps22_CVarArgPassedAsDouble", "configurationModel"]
+- ["Ps22_CVarArgPassedAsDouble", "supplementModel"]
+- !private ["Ps14_Incrementable", "CGFloat"]
+- !private ["Ps14_Incrementable", "configurationModel"]
+- ["Ps14_Incrementable", "supplementModel"]
+- !private ["Ps8_Integer", "CGFloat"]
+- !private ["Ps8_Integer", "configurationModel"]
+- ["Ps8_Integer", "supplementModel"]
+- !private ["Ps18_IntegerArithmetic", "CGFloat"]
+- !private ["Ps18_IntegerArithmetic", "configurationModel"]
+- ["Ps18_IntegerArithmetic", "supplementModel"]
+- !private ["Ps21_ObjectiveCBridgeable", "CGFloat"]
+- !private ["Ps21_ObjectiveCBridgeable", "configurationModel"]
+- ["Ps21_ObjectiveCBridgeable", "supplementModel"]
+- !private ["Ps14_SignedInteger", "CGFloat"]
+- !private ["Ps14_SignedInteger", "configurationModel"]
+- ["Ps14_SignedInteger", "supplementModel"]
+- !private ["Ps11_Strideable", "CGFloat"]
+- !private ["Ps11_Strideable", "configurationModel"]
+- ["Ps11_Strideable", "supplementModel"]
+depends-nominal:
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps17BitwiseOperations"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "P10EasyLayout25ELLayoutAttributeProtocol"
+- "C10EasyLayout23ELLayoutConstraintModel"
+- "P10EasyLayout25ELModelArrayEquatableType"
+- "P10EasyLayout20ELModelEquatableType"
+- "Ps9Equatable"
+- "Ps23FloatLiteralConvertible"
+- "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "Si"
+- "Ps7Integer"
+- "Ps17IntegerArithmetic"
+- "Ps25IntegerLiteralConvertible"
+- "Ps10MirrorPath"
+- "PSo15NSAccessibility"
+- "PSo30NSAccessibilityElementProtocol"
+- "PSo29NSAnimatablePropertyContainer"
+- "PSo25NSAppearanceCustomization"
+- "PSo8NSCoding"
+- "PSo21NSDraggingDestination"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSResponder"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo6NSView"
+- "Ps13SignedInteger"
+- "Ps12SignedNumber"
+- "Ps10Strideable"
+- "Ps31_BuiltinFloatLiteralConvertible"
+- "Ps33_BuiltinIntegerLiteralConvertible"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
+- "Ps14_Incrementable"
+- "Ps8_Integer"
+- "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps14_SignedInteger"
+- "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/Visibility.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/UnicodeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeStubs.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStdint.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/SwiftStddef.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RuntimeShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/LibcShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/RefCount.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/HeapObject.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/GlobalObjects.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/FoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/shims/module.map"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Users/baidu/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-03-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "8a7b2b4ac9efdf6c45fb2cb3a718b216"

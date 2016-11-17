@@ -92,7 +92,7 @@ public class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
         return ELLayoutCombinationConstraintModel(ms: top,left,bottom,right)
     }
     
-    public func ELCombination(attrs: NSLayoutAttribute...) -> ELLayoutCombinationConstraintModel {
+    public func ELCombination(_ attrs: NSLayoutAttribute...) -> ELLayoutCombinationConstraintModel {
         var models : [ELLayoutConstraintModel] = Array()
         for attr in attrs {
             let m = constraintModel(attr)
@@ -171,13 +171,13 @@ public class ELLayoutConstraintMaker : ELLayoutAttributeProtocol {
     }
     
     //MARK: private methods
-    private func constraintModel(att : NSLayoutAttribute) -> ELLayoutConstraintModel {
+    private func constraintModel(_ att : NSLayoutAttribute) -> ELLayoutConstraintModel {
         let model = ELLayoutConstraintModel(view: refereneView!,attribute: att)
         tmpModels.append(model)
         return model
     }
     
-    private func installConstraint(model : ELLayoutConstraintModel) {
+    private func installConstraint(_ model : ELLayoutConstraintModel) {
         let constraint = model.constraint()
         constraint.active = true
         let identifier = model.identifier

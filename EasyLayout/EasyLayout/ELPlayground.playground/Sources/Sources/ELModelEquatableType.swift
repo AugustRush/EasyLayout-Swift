@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol ELModelEquatableType {
-    func supplementModel(m : ELLayoutConstraintModel);
+    func supplementModel(_ m : ELLayoutConstraintModel);
 }
 
 extension ELLayoutConstraintModel : ELModelEquatableType {

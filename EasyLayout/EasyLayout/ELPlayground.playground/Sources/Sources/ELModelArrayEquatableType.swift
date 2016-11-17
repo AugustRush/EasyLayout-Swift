@@ -26,6 +26,6 @@ extension View : ELModelArrayEquatableType {
     }
 }
 
-extension _ArrayType where Generator.Element == ELModelEquatableType  {
+extension Array where Iterator.Element : ELModelEquatableType  {
 
 }

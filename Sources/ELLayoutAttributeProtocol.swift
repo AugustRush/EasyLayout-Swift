@@ -20,7 +20,6 @@ public protocol ELLayoutAttributeProtocol {
     var ELCenterY : ELLayoutConstraintModel { get }
     var ELLeading : ELLayoutConstraintModel { get }
     var ELTrailing : ELLayoutConstraintModel { get }
-    var ELBaseline : ELLayoutConstraintModel { get }
     var ELLastBaseline : ELLayoutConstraintModel { get }
     var ELSize : ELLayoutCombinationConstraintModel { get }
     var ELCenter : ELLayoutCombinationConstraintModel { get }

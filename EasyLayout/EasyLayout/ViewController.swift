@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     func layoutStyle2() {
         firstView.remakeConstraints { (make) in
-            make.ELCombination(.Left,.Top)
+            make.ELCombination(attrs: .left,.top)
                 .equalTo(10,10)
             make.ELSize.equalTo(self.view).mutipliers(0.5).constants(-30)
         }
@@ -75,14 +75,14 @@ class ViewController: UIViewController {
     //MARK: event methods
     @IBAction func initialLayout(sender: AnyObject) {
         layoutStyle1()
-        UIView.animateWithDuration(0.5) {
+        UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
         }
     }
     
     @IBAction func remakeConstraints(sender: AnyObject) {
         layoutStyle2()
-        UIView.animateWithDuration(0.5) { 
+        UIView.animate(withDuration: 0.5) { 
             self.view.layoutIfNeeded()
         }
     }
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     
     @IBAction func updateAllConstrinats(sender: AnyObject) {
         layoutStyle3()
-        UIView.animateWithDuration(0.5) { 
+        UIView.animate(withDuration: 0.5) { 
             self.view.layoutIfNeeded()
         }
     }

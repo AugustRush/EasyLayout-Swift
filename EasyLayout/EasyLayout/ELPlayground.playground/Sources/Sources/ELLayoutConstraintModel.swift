@@ -15,7 +15,7 @@ import AppKit
 public class ELLayoutConstraintModel {
     internal weak var view : View!
     internal weak var toView : View!
-    internal var relation : NSLayoutRelation = .Equal
+    internal var relation : NSLayoutRelation = .equal
     internal var attribute : NSLayoutAttribute!
     internal var toAttribute : NSLayoutAttribute!
     internal var priority : UILayoutPriority = UILayoutPriorityDefaultHigh
@@ -25,11 +25,11 @@ public class ELLayoutConstraintModel {
     //This method must be call when all properties has been set value
     lazy var identifier : String = {
         var str = String()
-        str = str + String(unsafeAddressOf(self.view))
+        str = str + String(describing: unsafeAddressOf(self.view))
         str = str + "/" + String(self.attribute.rawValue)
-        if self.relation != .Equal {
+        if self.relation != .equal {
             str = str + "/" + String(self.relation.rawValue)
-            str = str + "/" + String(unsafeAddressOf(self.toView))
+            str = str + "/" + String(describing: unsafeAddressOf(self.toView))
             str = str + "/" + String(self.toAttribute.rawValue)
         }
         return str
@@ -40,20 +40,20 @@ public class ELLayoutConstraintModel {
         self.attribute = attribute
     }
     //MARK: public methods
-    public func equalTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
-        relation = .Equal
+    public func equalTo(_ paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
+        relation = .equal
         paramater.supplementModel(self);
         return self
     }
     
-    public func greaterThanOrEqualTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
-        relation = .GreaterThanOrEqual
+    public func greaterThanOrEqualTo(_ paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
+        relation = .greaterThanOrEqual
         paramater.supplementModel(self)
         return self
     }
     
-    public func lessThanOrEqualTo(paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
-        relation = .LessThanOrEqual
+    public func lessThanOrEqualTo(_ paramater : ELModelEquatableType) -> ELLayoutConstraintModel {
+        relation = .lessThanOrEqual
         paramater.supplementModel(self)
         return self
     }

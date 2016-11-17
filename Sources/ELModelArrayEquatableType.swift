@@ -13,11 +13,11 @@ import AppKit
 #endif
 
 public protocol ELModelArrayEquatableType {
-    func supplementModels(models : [ELLayoutConstraintModel], relation : NSLayoutRelation);
+    func supplementModels(_ models : [ELLayoutConstraintModel], relation : NSLayoutRelation);
 }
 
 extension View : ELModelArrayEquatableType {
-    public func supplementModels(models: [ELLayoutConstraintModel], relation: NSLayoutRelation) {
+    public func supplementModels(_ models: [ELLayoutConstraintModel], relation: NSLayoutRelation) {
         for model in models {
             model.toView = self
             model.toAttribute = model.attribute
@@ -26,6 +26,6 @@ extension View : ELModelArrayEquatableType {
     }
 }
 
-extension _ArrayType where Generator.Element == ELModelEquatableType  {
+extension Array where Iterator.Element : ELModelEquatableType  {
 
 }

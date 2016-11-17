@@ -30,7 +30,7 @@ public class ELLayoutCombinationConstraintModel {
         }
     }
     
-    public func equalTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
+    public func equalTo(_ ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let equatable = index < ms.count ? ms[index] : ms[0]
@@ -39,7 +39,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }    
     
-    public func greaterThanOrEqualTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
+    public func greaterThanOrEqualTo(_ ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let equatable = index < ms.count ? ms[index] : ms[0]
@@ -48,7 +48,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    public func lessThanOrEqualTo(ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
+    public func lessThanOrEqualTo(_ ms : ELModelEquatableType...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let equatable = index < ms.count ? ms[index] : ms[0]
@@ -57,7 +57,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func mutipliers(ms : CGFloat...) -> ELLayoutCombinationConstraintModel {
+    func mutipliers(_ ms : CGFloat...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let mutiplier = index < ms.count ? ms[index] : ms[0]
@@ -66,7 +66,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func mutipliers(m : CGFloat) -> ELLayoutCombinationConstraintModel {
+    func mutipliers(_ m : CGFloat) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             model.mutiplier(m)
@@ -74,7 +74,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func prioritys(ps : UILayoutPriority...) -> ELLayoutCombinationConstraintModel {
+    func prioritys(_ ps : UILayoutPriority...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let priority = index < ps.count ? ps[index] : ps[0]
@@ -83,7 +83,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func prioritys(p : UILayoutPriority) -> ELLayoutCombinationConstraintModel {
+    func prioritys(_ p : UILayoutPriority) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             model.priority(p)
@@ -91,7 +91,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func constants(cs : CGFloat...) -> ELLayoutCombinationConstraintModel {
+    func constants(_ cs : CGFloat...) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             let constant = index < cs.count ? cs[index] : cs[0]
@@ -100,7 +100,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func constants(c : CGFloat) -> ELLayoutCombinationConstraintModel {
+    func constants(_ c : CGFloat) -> ELLayoutCombinationConstraintModel {
         for index in 0..<models.count {
             let model = models[index]
             model.constant(c)
@@ -108,7 +108,7 @@ public class ELLayoutCombinationConstraintModel {
         return self
     }
     
-    func constraint(attribute : NSLayoutAttribute) -> NSLayoutConstraint? {
+    func constraint(_ attribute : NSLayoutAttribute) -> NSLayoutConstraint? {
         let model = modelsDict[attribute]?.value as ELLayoutConstraintModel?
         return model?.constraint()
     }

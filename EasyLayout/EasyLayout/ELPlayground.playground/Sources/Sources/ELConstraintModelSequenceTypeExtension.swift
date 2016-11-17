@@ -8,18 +8,18 @@
 
 import Foundation
 
-extension _ArrayType where Generator.Element : ELLayoutConstraintModel {
+extension Array where Generator.Element : ELLayoutConstraintModel {
     
     //MARK: public methods
-    public func equalTo(paramater : ELModelArrayEquatableType) -> Void {
+    public func equalTo(_ paramater : ELModelArrayEquatableType) -> Void {
        paramater.supplementModels(self as! [ELLayoutConstraintModel], relation: .Equal)
     }
     
-    public func greaterThanOrEqualTo(paramater : ELModelArrayEquatableType) -> Void {
+    public func greaterThanOrEqualTo(_ paramater : ELModelArrayEquatableType) -> Void {
         paramater.supplementModels(self as! [ELLayoutConstraintModel], relation: .GreaterThanOrEqual)
     }
     
-    public func lessThanOrEqualTo(paramater : ELModelArrayEquatableType) -> Void {
+    public func lessThanOrEqualTo(_ paramater : ELModelArrayEquatableType) -> Void {
         paramater.supplementModels(self as! [ELLayoutConstraintModel], relation: .LessThanOrEqual)
     }
 }
